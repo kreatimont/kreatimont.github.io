@@ -1,30 +1,33 @@
-## Welcome to the my own codeland
+## Welcome to the my codeland
+
 
 You can find me also on:
-1.[Telegram](https://t.me/kreatimont)
-2.[LinkedIn](https://www.linkedin.com/in/alexandr-nadtoka-172746115/)
-3.[Instagram](https://instagram.com/kreatimont)
+- [Telegram](https://t.me/kreatimont)
+- [GitHub](https://github.com/kreatimont)
+- [LinkedIn](https://www.linkedin.com/in/alexandr-nadtoka-172746115/)
+- [Instagram](https://instagram.com/kreatimont)
 
-### Markdown
+### About me 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+19 y.o., iOS, Android developer.
 
+Test code highlighter
 ```markdown
-Syntax highlighted code block
+Syntax highlighted code block (Swift 4)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+ func removeAnimate() {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.view.alpha = 0.0
+        }, completion: { (finished : Bool) in
+            if(finished) {
+                self.willMove(toParentViewController: nil)
+                self.view.removeFromSuperview()
+                self.removeFromParentViewController()
+            }
+        })
+    }
+    
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -32,7 +35,3 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kreatimont/kreatimont.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
