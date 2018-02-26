@@ -1,8 +1,9 @@
-## Welcome to GitHub Pages
+## Welcome to the my own codeland
 
-You can use the [editor on GitHub](https://github.com/kreatimont/kreatimont.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can find me also on:
+1.[Telegram](https://t.me/kreatimont)
+2.[LinkedIn](https://www.linkedin.com/in/alexandr-nadtoka-172746115/)
+3.[Instagram](https://instagram.com/kreatimont)
 
 ### Markdown
 
