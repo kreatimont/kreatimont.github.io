@@ -9,29 +9,12 @@ You can find me also on:
 
 ### About me 
 
-19 y.o., iOS, Android developer.
+19 y.o. iOS, Android developer.
 
-Test code highlighter
+Code you need:
 ```markdown
-Syntax highlighted code block (Swift 4)
-
- func removeAnimate() {
-        UIView.animate(withDuration: 0.25, animations: {
-            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-            self.view.alpha = 0.0
-        }, completion: { (finished : Bool) in
-            if(finished) {
-                self.willMove(toParentViewController: nil)
-                self.view.removeFromSuperview()
-                self.removeFromParentViewController()
-            }
-        })
-    }
-    
+int main() {
+   cout << "Hello World!" << endl;    
+   return 0;
+}
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kreatimont/kreatimont.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
