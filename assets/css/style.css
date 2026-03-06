@@ -521,6 +521,13 @@ footer {
 
 .legal-content h2:first-child { margin-top: 0; }
 
+.legal-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 24px 0 10px;
+  color: var(--text);
+}
+
 .legal-content p,
 .legal-content li {
   color: var(--text-secondary);
