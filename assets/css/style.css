@@ -632,6 +632,33 @@ footer {
 .contact-box-text h3 { font-size: 1.1rem; margin-bottom: 6px; }
 .contact-box-text p { color: var(--text-secondary); font-size: 0.9rem; }
 
+/* ─── Coming Soon badge ────────────────────────────────────────── */
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 980px;
+  border: 1.5px dashed var(--border);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+}
+
+.coming-soon-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.8); }
+}
+
 /* ─── Utilities ────────────────────────────────────────────────── */
 .text-secondary { color: var(--text-secondary); }
 .mt-8  { margin-top:  8px; }
