@@ -1,0 +1,22 @@
+# Claude Code
+.claude/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependency cache
+vendor/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

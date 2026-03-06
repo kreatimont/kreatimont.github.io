@@ -426,6 +426,53 @@ footer {
   width: auto;
 }
 
+/* ─── Store download buttons ───────────────────────────────────── */
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 18px;
+  height: 44px;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+
+.store-btn:hover {
+  opacity: 0.82;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.store-btn-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  fill: #fff;
+}
+
+.store-btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.store-btn-text small {
+  font-size: 0.65rem;
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.01em;
+}
+
+.store-btn-text strong {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 @media (max-width: 580px) {
   .app-hero-inner { flex-direction: column; }
   .app-hero-icon { width: 88px; height: 88px; border-radius: 20px; }
