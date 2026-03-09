@@ -5,7 +5,9 @@
       "WebFetch(domain:play.google.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "WebFetch(domain:itunes.apple.com)",
+      "Bash(python3:*)"
     ]
   }
 }
