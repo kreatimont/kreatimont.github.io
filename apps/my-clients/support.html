@@ -4,8 +4,180 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Support — My Clients</title>
-  <meta name="description" content="Get help and support for My Clients, the client organizer app." />
+  <meta name="description" content="Get answers to common questions about My Clients — the client organizer app for iOS and Android." />
   <link rel="stylesheet" href="../../assets/css/style.css" />
+  <style>
+    /* ── Support Page — My Clients ── */
+
+    .support-hero {
+      padding: 40px 0 32px;
+    }
+
+    .support-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      color: var(--text);
+    }
+
+    .support-hero p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 0;
+      max-width: 520px;
+    }
+
+    /* ── FAQ ── */
+    .faq-section-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #498DF4;
+      margin: 48px 0 20px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 56px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-item[open] {
+      border-color: rgba(73, 141, 244, 0.35);
+    }
+
+    .faq-item summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px 20px;
+      font-size: 0.975rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      list-style: none;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      min-height: 56px; /* generous touch target */
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-body {
+      padding: 0 20px 20px;
+      font-size: 0.925rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    .faq-body p {
+      margin: 0 0 12px;
+    }
+
+    .faq-body p:last-child {
+      margin: 0;
+    }
+
+    .faq-body a {
+      color: #498DF4;
+      text-decoration: none;
+    }
+
+    .faq-body a:hover {
+      text-decoration: underline;
+    }
+
+    .faq-tip {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      background: rgba(73, 141, 244, 0.07);
+      border: 1px solid rgba(73, 141, 244, 0.18);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-top: 12px;
+      font-size: 0.875rem;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .faq-tip-icon {
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Contact box ── */
+    .contact-card {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(73, 141, 244, 0.1);
+      border: 1px solid rgba(73, 141, 244, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-card-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0 0 6px;
+    }
+
+    .contact-card-body p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin: 0 0 16px;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .faq-item summary {
+        padding: 16px;
+        font-size: 0.935rem;
+      }
+
+      .faq-body {
+        padding: 14px 16px 18px;
+        font-size: 0.9rem;
+      }
+
+      .contact-card {
+        flex-direction: column;
+        gap: 14px;
+        padding: 22px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -41,76 +213,157 @@
     </nav>
   </div>
 
-  <section style="padding-top: 24px;">
+  <section style="padding-top: 16px; border-top: none;">
     <div class="container">
-      <h1 class="section-title">Support</h1>
-      <p class="section-subtitle">Need help with My Clients? Find answers below or reach out directly.</p>
 
-      <p class="section-label">FAQ</p>
-      <h2 class="section-title" style="font-size: 1.4rem; margin-bottom: 24px;">Frequently Asked Questions</h2>
+      <div class="support-hero">
+        <h1>Help &amp; Support</h1>
+        <p>Answers to the most common questions about My Clients. Can't find what you're looking for? Reach out directly — we're happy to help.</p>
+      </div>
+
+      <p class="faq-section-label">Frequently Asked Questions</p>
 
       <div class="faq-list">
 
+        <!-- 1. Adding a client -->
         <details class="faq-item">
-          <summary>How do I add a new client?</summary>
-          <p class="faq-body">
-            Tap the "+" button on the main screen to open the new client form. Fill in the relevant details
-            (name, contact info, notes) and save. Your client will appear in the list immediately.
-          </p>
+          <summary>
+            How do I add a client?
+          </summary>
+          <div class="faq-body">
+            <p>Tap the <strong>+</strong> button on the main screen to open the new client form. Enter the client's name, contact details, and any notes you'd like to keep — then save. The client appears in your list right away.</p>
+            <p>You can also paste an <strong>Instagram profile link</strong> directly into the name field. My Clients will detect it automatically, display the username in the list, and let you open their Instagram page with a single tap right from the appointments view — handy for creators, stylists, or anyone who communicates with clients through Instagram.</p>
+            <div class="faq-tip">
+              <span class="faq-tip-icon">💡</span>
+              <span>Paste a full Instagram URL (e.g. <em>https://instagram.com/username</em>) into the name field to enable quick-open from the appointments list.</span>
+            </div>
+          </div>
         </details>
 
+        <!-- 2. Reminders -->
         <details class="faq-item">
-          <summary>How do I set an appointment reminder?</summary>
-          <p class="faq-body">
-            Open a client's profile, add an appointment with date and time, and enable the reminder toggle.
-            The App will ask for notification permission on first use — make sure to allow it so reminders work correctly.
-          </p>
+          <summary>
+            How do appointment reminders work?
+          </summary>
+          <div class="faq-body">
+            <p>Reminders are automatic — no extra steps needed. Simply create an appointment and set its date and time. My Clients will notify you <strong>30 minutes before</strong> the appointment (or whichever interval you've chosen in Settings), so you're never caught off-guard.</p>
+            <p>There's no separate reminder toggle or manual scheduling. Just set the appointment time and the app takes care of the rest.</p>
+            <div class="faq-tip">
+              <span class="faq-tip-icon">🔔</span>
+              <span>Make sure to <strong>allow notifications</strong> when prompted the first time you add a client — this is required for reminders to reach you. You can adjust the advance notice time anytime in <strong>Settings → Reminder Time</strong>.</span>
+            </div>
+          </div>
         </details>
 
+        <!-- 3. Backup -->
         <details class="faq-item">
-          <summary>Is my data backed up?</summary>
-          <p class="faq-body">
-            Data is stored locally on your device. If you have iCloud backup enabled for your iPhone,
-            app data will be included in your iCloud backup automatically. Deleting and reinstalling the
-            App without a backup will erase your records.
-          </p>
+          <summary>
+            Is my data backed up?
+          </summary>
+          <div class="faq-body">
+            <p>Yes — backups happen automatically. When iCloud is available on your device, My Clients stores a backup of your data in your personal iCloud account. No setup required.</p>
+            <p>This makes it easy to <strong>restore your client records</strong> after reinstalling the app, or to <strong>move to a new device</strong> without losing anything. You can also export and share a copy of your data directly from the app whenever you need it.</p>
+            <div class="faq-tip">
+              <span class="faq-tip-icon">☁️</span>
+              <span>Your backups live in your own iCloud account — only you have access to them. If iCloud is unavailable, data is stored locally on your device only.</span>
+            </div>
+          </div>
         </details>
 
+        <!-- 4. Premium -->
         <details class="faq-item">
-          <summary>What does the Full Access purchase include?</summary>
-          <p class="faq-body">
-            The Full Access in-app purchase unlocks all features of the App without any limitations.
-            It is a one-time purchase — no subscription required.
-          </p>
+          <summary>
+            What's included in the Premium subscription?
+          </summary>
+          <div class="faq-body">
+            <p>Premium unlocks the full My Clients experience with no interruptions:</p>
+            <p>
+              <strong>Ad-free</strong> — use the app without any advertisements.<br>
+              <strong>Detailed statistics</strong> — explore your business performance by month, year, or any custom date range you choose.<br>
+              <strong>Expense tracking</strong> — log and monitor your expenses alongside client activity to get a complete picture of your business finances.
+            </p>
+            <p>The free version covers all core features — client records, appointments, and basic stats. Premium is for those who want deeper insights and a distraction-free workspace.</p>
+          </div>
         </details>
 
+        <!-- 5. Restore purchases -->
         <details class="faq-item">
-          <summary>How do I restore my purchase?</summary>
-          <p class="faq-body">
-            Go to the App's settings and tap "Restore Purchases". Your previously purchased items
-            will be restored as long as you are signed in with the same Apple ID used for the original purchase.
-          </p>
+          <summary>
+            How do I restore my Premium subscription?
+          </summary>
+          <div class="faq-body">
+            <p>If you've previously subscribed to Premium and need to restore it — for example after reinstalling the app or switching devices — here's how:</p>
+            <p>When the subscription prompt appears, look for the <strong>Restore Purchases</strong> link at the top of that screen. Tap it and your subscription will be restored automatically, as long as you're signed in with the same Apple ID used for the original purchase.</p>
+            <div class="faq-tip">
+              <span class="faq-tip-icon">ℹ️</span>
+              <span>Restoring a purchase is always free and takes just a moment. No need to buy again.</span>
+            </div>
+          </div>
         </details>
 
+        <!-- 7. Quick actions -->
         <details class="faq-item">
-          <summary>Does the App share my client data with anyone?</summary>
-          <p class="faq-body">
-            No. All client data is stored only on your device and is never sent to any external server.
-            See the <a href="privacy.html">Privacy Policy</a> for full details.
-          </p>
+          <summary>
+            Can I quickly call, text, or message a client from the app?
+          </summary>
+          <div class="faq-body">
+            <p>Yes — just <strong>hold (long-press) any appointment</strong> on the main screen to reveal a quick action menu. From there you can:</p>
+            <p>
+              <strong>📲 Open Instagram</strong> — jumps straight to the client's profile if you've saved their Instagram link.<br>
+              <strong>✏️ Edit record</strong> — update the client's details without opening the full profile.<br>
+              <strong>📞 Call</strong> — dials the client's phone number immediately.<br>
+              <strong>💬 Text</strong> — opens a new message to the client in your default messaging app.
+            </p>
+            <div class="faq-tip">
+              <span class="faq-tip-icon">👆</span>
+              <span>A long press is all it takes — no need to dig into menus. It's the fastest way to reach a client right before their appointment.</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- 8. Storage -->
+        <details class="faq-item">
+          <summary>
+            How much storage space does the app need?
+          </summary>
+          <div class="faq-body">
+            <p>Because all your client data is stored directly on your device — with no cloud server in between — My Clients needs enough free space to save and manage your records reliably. We recommend keeping at least <strong>500 MB of free storage</strong> available on your phone at all times.</p>
+            <p>If your device runs low on space, the app may not be able to save new records or create backups correctly. You can check available storage in <strong>Settings → General → iPhone Storage</strong> on iOS, or <strong>Settings → Storage</strong> on Android.</p>
+            <div class="faq-tip">
+              <span class="faq-tip-icon">📦</span>
+              <span>Keeping your phone storage organized is good practice in general — it helps all your apps run smoothly, not just My Clients.</span>
+            </div>
+          </div>
+        </details>
+
+        <!-- 6. Privacy -->
+        <details class="faq-item">
+          <summary>
+            Is my client data private and secure?
+          </summary>
+          <div class="faq-body">
+            <p>Absolutely. Your client data <strong>never leaves your personal ecosystem</strong> — it is either stored locally on your device or synced to your own iCloud account, depending on your settings.</p>
+            <p>If you have iCloud sync enabled, data is backed up to your private iCloud account only — inaccessible to anyone else. If you prefer to keep everything fully local, simply disable iCloud sync and your data stays exclusively on your device.</p>
+            <p>In either case, <strong>no data is ever sent to our servers or shared with any third party</strong>. Your clients' information is yours alone.</p>
+            <p>For the full details, see our <a href="privacy.html">Privacy Policy</a>.</p>
+          </div>
         </details>
 
       </div>
 
-      <div class="contact-box">
-        <div>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent); flex-shrink: 0; margin-top: 2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <!-- Contact -->
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#498DF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
         </div>
-        <div class="contact-box-text">
+        <div class="contact-card-body">
           <h3>Still need help?</h3>
-          <p>Send me an email and I'll get back to you as soon as possible.</p>
-          <a href="mailto:nadtoka.alexandr@gmail.com" class="btn btn-primary mt-16" style="font-size: 0.875rem; padding: 10px 20px;">
-            nadtoka.alexandr@gmail.com
+          <p>Send an email and I'll get back to you as soon as possible — usually within a day.</p>
+          <a href="mailto:client.book.helper@gmail.com" class="btn btn-primary" style="font-size: 0.875rem; padding: 10px 20px;">
+            client.book.helper@gmail.com
           </a>
         </div>
       </div>
