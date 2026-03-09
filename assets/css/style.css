@@ -662,6 +662,23 @@ footer {
 /* ─── Nav active link ──────────────────────────────────────────── */
 .nav-active { color: var(--accent) !important; }
 
+/* ─── Language toggle ───────────────────────────────────────────── */
+.lang-toggle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.lang-toggle:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
 /* ─── Timeline ─────────────────────────────────────────────────── */
 .timeline {
   display: flex;
