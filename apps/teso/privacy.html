@@ -32,6 +32,45 @@
       background: var(--accent, #007AFF);
       color: #fff;
     }
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .legal-content th,
+    .legal-content td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border, #e5e5e5);
+    }
+    .legal-content th {
+      font-weight: 600;
+      background: var(--bg-secondary, #f9f9f9);
+    }
+    .legal-highlight {
+      background: #fff8e1;
+      border-left: 4px solid #ffb300;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    @media (prefers-color-scheme: dark) {
+      .legal-highlight {
+        background: rgba(255, 179, 0, 0.12);
+      }
+      .legal-content th {
+        background: var(--bg-secondary, #2a2a2a);
+      }
+    }
+    @media (max-width: 600px) {
+      .legal-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
   </style>
 </head>
 <body>
@@ -64,7 +103,6 @@
       <a href="index.html">Overview</a>
       <a href="support.html">Support</a>
       <a href="privacy.html" class="active">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
     </nav>
   </div>
 
@@ -80,114 +118,184 @@
 
       <!-- English -->
       <div id="lang-en">
-        <div class="legal-meta">Effective Date: March 2, 2026 &nbsp;·&nbsp; Developer: Alexandr Nadtoka</div>
+        <div class="legal-meta">Effective Date: April 13, 2026 &nbsp;&middot;&nbsp; Developer: Alexandr Nadtoka</div>
         <div class="legal-content">
 
-          <p>Teso: Couples ("App", "we", "us", or "our") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use the mobile application <strong>Teso: Couples</strong> available on the Apple App Store.</p>
-          <p>By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+          <p>Teso: Couples ("the App") is a relationship companion app that helps couples track shared events, explore conversation prompts, and resolve conflicts using AI-assisted analysis. This Privacy Policy explains what data we collect, how we use it, who we share it with, and what rights you have.</p>
+          <p>By using the App, you agree to the practices described in this policy. If you do not agree, please do not use the App.</p>
 
           <h2>1. Information We Collect</h2>
 
           <h3>1.1 Information You Provide</h3>
-          <p>When you use the App, we may collect:</p>
           <ul>
-            <li><strong>Name</strong></li>
-            <li><strong>Email address</strong></li>
-            <li>Account authentication information when signing in via:
-              <ul>
-                <li>Apple Sign In</li>
-                <li>Google Sign-In</li>
-              </ul>
-            </li>
-            <li>Content you create within the App, such as:
-              <ul>
-                <li>Events (e.g., dates, movie nights, intimacy events)</li>
-                <li>Card swipes and preferences</li>
-                <li>Conflict resolution inputs and responses</li>
-              </ul>
-            </li>
+            <li><strong>Account information:</strong> name, email address, and authentication data when you sign in with Apple or Google.</li>
+            <li><strong>Partner connection:</strong> a unique pair code used to link your account with your partner.</li>
+            <li><strong>Events:</strong> events you create (e.g., dates, movie nights, intimacy events), including titles, dates, and notes.</li>
+            <li><strong>Card interactions:</strong> your swipes and preferences on conversation/activity cards.</li>
+            <li><strong>Wishlist entries:</strong> items you add to shared wishlists.</li>
           </ul>
 
-          <h3>1.2 Automatically Collected Information</h3>
-          <p>We may automatically collect certain technical information, including:</p>
+          <h3>1.2 Conflict Resolution Data (Sensitive)</h3>
+          <div class="legal-highlight">
+            The Conflict Resolution feature collects data that may be considered <strong>sensitive or special-category personal data</strong> under applicable privacy laws (including GDPR Article 9), as it relates to your emotional state and intimate relationship. We process this data only with your explicit consent, which you provide each time you submit a conflict entry.
+          </div>
+          <p>When you use the Conflict Resolution feature, we collect:</p>
           <ul>
-            <li>Device type</li>
+            <li><strong>Conflict topic</strong> (selected or custom-written)</li>
+            <li><strong>Description of what happened</strong> (free-text narrative)</li>
+            <li><strong>Emotional intensity rating</strong> (1&ndash;10 scale)</li>
+            <li><strong>What felt important or painful</strong> (free-text)</li>
+            <li><strong>Your acknowledged responsibility</strong> (free-text)</li>
+            <li><strong>What you want from the situation</strong> (free-text)</li>
+            <li><strong>AI-refined text</strong> (if you request a rewrite of your entry)</li>
+            <li><strong>AI-generated analysis</strong> (therapeutic insights generated from both partners' submissions)</li>
+            <li><strong>Feedback</strong> on whether the analysis was helpful</li>
+          </ul>
+          <p>Both you and your partner can see each other's submitted entries and the shared analysis once the conflict is resolved.</p>
+
+          <h3>1.3 Automatically Collected Information</h3>
+          <ul>
+            <li>Device type and model</li>
             <li>iOS version</li>
             <li>App version</li>
-            <li>Anonymous usage data</li>
-            <li>Diagnostic and crash data</li>
+            <li>Anonymous usage and diagnostic data</li>
+            <li>Crash reports</li>
           </ul>
 
           <h2>2. How We Use Your Information</h2>
-          <p>We use the collected information to:</p>
           <ul>
             <li>Create and manage your account</li>
-            <li>Enable connection with your partner</li>
-            <li>Sync matched cards between partners</li>
-            <li>Provide AI-powered conflict resolution</li>
-            <li>Manage subscriptions and premium access</li>
-            <li>Improve app performance and user experience</li>
-            <li>Perform analytics and diagnostics</li>
-            <li>Ensure security and prevent fraud</li>
+            <li>Connect you with your partner</li>
+            <li>Sync events, cards, and wishlists between partners</li>
+            <li>Process conflict submissions and generate AI-powered analysis</li>
+            <li>Manage subscriptions and premium features</li>
+            <li>Improve the App through analytics</li>
+            <li>Send service-related notifications (e.g., when your partner submits their conflict entry)</li>
+            <li>Detect and prevent fraud or abuse</li>
           </ul>
-          <p>We do <strong>not</strong> sell your personal information.</p>
+          <p>We do <strong>not</strong> sell your personal information. We do <strong>not</strong> use your data for advertising.</p>
 
-          <h2>3. Third-Party Services</h2>
+          <h2>3. Third-Party Services and Data Sharing</h2>
+          <p>We share your data with the following third-party service providers, solely to operate the App:</p>
 
-          <h3>3.1 Firebase</h3>
-          <p>We use Firebase (by Google LLC) for authentication, analytics, crash reporting, and backend infrastructure.</p>
-          <p>Firebase Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
-
-          <h3>3.2 RevenueCat</h3>
-          <p>We use RevenueCat to manage in-app subscriptions and purchases. RevenueCat may process subscription status, purchase history, and anonymous identifiers.</p>
-          <p>RevenueCat Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></p>
-
-          <h3>3.3 Sign-In Providers</h3>
-          <p>If you use Apple Sign-In or Google Sign-In, those providers may process authentication data according to their respective privacy policies.</p>
+          <table>
+            <tr>
+              <th>Provider</th>
+              <th>Purpose</th>
+              <th>Data shared</th>
+            </tr>
+            <tr>
+              <td><strong>Supabase, Inc.</strong></td>
+              <td>Backend infrastructure, database, authentication, real-time sync</td>
+              <td>All account, event, card, wishlist, and conflict data. Stored on Supabase-managed servers (AWS, US regions).</td>
+            </tr>
+            <tr>
+              <td><strong>OpenAI, L.L.C.</strong></td>
+              <td>AI-powered conflict analysis and text refinement</td>
+              <td>Conflict entries (topic, descriptions, emotional data) are sent to OpenAI's API for processing. See Section 4 for details.</td>
+            </tr>
+            <tr>
+              <td><strong>RevenueCat, Inc.</strong></td>
+              <td>Subscription and purchase management</td>
+              <td>Anonymous app user ID, purchase receipts, subscription status.</td>
+            </tr>
+            <tr>
+              <td><strong>Apple Inc.</strong></td>
+              <td>Sign in with Apple, App Store payments, crash reporting</td>
+              <td>Authentication tokens, payment processing (we never see your payment details), diagnostics.</td>
+            </tr>
+            <tr>
+              <td><strong>Google LLC</strong></td>
+              <td>Google Sign-In</td>
+              <td>Authentication tokens, basic profile (name, email) if you choose Google Sign-In.</td>
+            </tr>
+            <tr>
+              <td><strong>Google Firebase</strong></td>
+              <td>Push notifications, crash reporting</td>
+              <td>Device tokens, crash logs. Firebase is <em>not</em> used as the primary database.</td>
+            </tr>
+          </table>
 
           <h2>4. AI Conflict Resolution Feature</h2>
-          <p>The App includes an AI-powered conflict resolution feature available to subscribed users.</p>
-          <p>When you and your partner submit opinions:</p>
+          <p>When you use the Conflict Resolution feature, your submitted text and emotional data are sent to <strong>OpenAI's API</strong> (models: GPT-4o and GPT-4o-mini) for processing. Specifically:</p>
           <ul>
-            <li>The submitted text is processed to generate analysis.</li>
-            <li>Data may be temporarily processed by secure AI service providers.</li>
-            <li>We do not use your private conflict data for advertising.</li>
-            <li>We do not sell this information.</li>
+            <li><strong>Text refinement:</strong> If you request an AI rewrite, your conflict entry is sent to OpenAI to generate a version based on Nonviolent Communication (NVC) principles.</li>
+            <li><strong>Topic generation:</strong> The initiator's topic and description are sent to generate a neutral topic title shown to the partner.</li>
+            <li><strong>Full analysis:</strong> After both partners submit, both entries (descriptions, emotional ratings, acknowledged responsibility, desires) are sent to OpenAI to generate a therapeutic analysis.</li>
           </ul>
-          <p>We aim to minimize stored sensitive content and protect your privacy.</p>
-
-          <h2>5. Subscriptions</h2>
-          <p>Teso: Couples offers optional in-app subscriptions that unlock conflict resolution, additional card packs, and premium features. All payments are processed through Apple's App Store. We do not directly store or process your payment information.</p>
-
-          <h2>6. Data Storage and Security</h2>
-          <p>We implement reasonable technical and organizational measures to protect your data. However, no method of electronic transmission or storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee absolute security.</p>
-
-          <h2>7. Data Retention</h2>
-          <p>We retain your information:</p>
+          <p><strong>Important:</strong></p>
           <ul>
-            <li>As long as your account is active</li>
-            <li>As necessary to provide services</li>
-            <li>As required to comply with legal obligations</li>
+            <li>Your data is sent to OpenAI via encrypted HTTPS connections.</li>
+            <li>Under OpenAI's API data usage policy, API inputs and outputs are <strong>not used to train OpenAI's models</strong>.</li>
+            <li>We do not include your name, email, or account identifiers in requests to OpenAI.</li>
+            <li>OpenAI may retain API data for up to 30 days for abuse monitoring, after which it is deleted. See <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">OpenAI's API Data Usage Policy</a> for details.</li>
           </ul>
-          <p>You may request deletion of your account and associated data at any time (see Section 10).</p>
+
+          <h2>5. Data Storage and Security</h2>
+          <p>Your data is stored on <strong>Supabase</strong>-managed infrastructure hosted on Amazon Web Services (AWS) in the United States. Data is encrypted in transit (TLS) and at rest (AES-256).</p>
+          <p>We implement reasonable technical and organizational measures to protect your data, including:</p>
+          <ul>
+            <li>Row-Level Security (RLS) policies ensuring only you and your partner can access your shared data</li>
+            <li>Encrypted connections for all data transmission</li>
+            <li>Secure authentication via Apple and Google identity providers</li>
+          </ul>
+          <p>However, no method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security.</p>
+
+          <h2>6. Data Retention</h2>
+          <ul>
+            <li><strong>Account data:</strong> retained as long as your account is active.</li>
+            <li><strong>Conflict data:</strong> retained as long as your account is active. You may request deletion at any time (see Section 9).</li>
+            <li><strong>OpenAI processing:</strong> OpenAI may retain API request data for up to 30 days for abuse monitoring, then deletes it.</li>
+            <li><strong>Analytics and crash data:</strong> retained in anonymized/aggregated form.</li>
+          </ul>
+          <p>Upon account deletion, your personal data is removed from active systems within 30 days, except where we are legally required to retain it.</p>
+
+          <h2>7. Subscriptions</h2>
+          <p>Teso offers optional in-app subscriptions that unlock premium features, including Conflict Resolution, additional card packs, and more. All payments are processed through <strong>Apple's App Store</strong>. We do not directly store or process your payment information. Subscription status is managed by RevenueCat.</p>
 
           <h2>8. Children's Privacy</h2>
-          <p>The App is not intended for individuals under the age of 16. We do not knowingly collect personal information from children.</p>
+          <p>The App is not intended for individuals under the age of 16. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately.</p>
 
           <h2>9. Your Rights</h2>
-          <p>Depending on your location, you may have rights including access to your data, correction of inaccurate data, deletion of your data, and withdrawal of consent.</p>
-          <p>To exercise these rights, contact us at: <a href="mailto:nadtoka.o.work@gmail.com">nadtoka.o.work@gmail.com</a></p>
+          <p>Depending on your location, you may have the following rights:</p>
+          <ul>
+            <li><strong>Access:</strong> request a copy of the personal data we hold about you.</li>
+            <li><strong>Correction:</strong> request correction of inaccurate data.</li>
+            <li><strong>Deletion:</strong> request deletion of your personal data.</li>
+            <li><strong>Data portability:</strong> request your data in a structured, machine-readable format.</li>
+            <li><strong>Restriction:</strong> request restriction of processing in certain circumstances.</li>
+            <li><strong>Objection:</strong> object to processing based on legitimate interests.</li>
+            <li><strong>Withdraw consent:</strong> withdraw consent for processing of sensitive data (conflict resolution) at any time, without affecting the lawfulness of prior processing.</li>
+          </ul>
+          <p>To exercise any of these rights, contact us at <strong><a href="mailto:nadtoka.o.work@gmail.com">nadtoka.o.work@gmail.com</a></strong>. We will respond within 30 days.</p>
+
+          <h3>9.1 For Users in the European Economic Area (EEA)</h3>
+          <p>If you are located in the EEA, our legal bases for processing your personal data are:</p>
+          <ul>
+            <li><strong>Contract:</strong> processing necessary to provide the App's services (account, partner sync, events).</li>
+            <li><strong>Explicit consent:</strong> processing of sensitive data in the Conflict Resolution feature (GDPR Article 9(2)(a)). You provide this consent each time you submit a conflict entry. You may withdraw consent at any time.</li>
+            <li><strong>Legitimate interest:</strong> analytics, fraud prevention, and App improvement.</li>
+          </ul>
+          <p>Your data is transferred to the United States (Supabase/AWS and OpenAI). These transfers are safeguarded by Standard Contractual Clauses (SCCs) or equivalent mechanisms.</p>
+          <p>You have the right to lodge a complaint with your local data protection authority.</p>
 
           <h2>10. Account Deletion</h2>
-          <p>You may request account deletion by using in-app deletion (if available) or contacting us via email. Upon deletion, your personal information will be removed from active systems within a reasonable timeframe, except where legally required to retain it.</p>
+          <p>You can request account deletion through the in-app account settings or by contacting us at <strong><a href="mailto:nadtoka.o.work@gmail.com">nadtoka.o.work@gmail.com</a></strong>. Upon deletion:</p>
+          <ul>
+            <li>Your personal information is removed from active systems within 30 days.</li>
+            <li>Shared data (events, conflicts) associated with your pair may be anonymized or deleted.</li>
+            <li>Some data may be retained where legally required.</li>
+          </ul>
 
           <h2>11. International Data Transfers</h2>
-          <p>Your information may be processed and stored in countries outside your country of residence. By using the App, you consent to such transfers where applicable.</p>
+          <p>Your information may be transferred to and processed in the <strong>United States</strong>, where our service providers (Supabase, OpenAI) operate. By using the App, you consent to the transfer of your information to the United States and other jurisdictions that may have different data protection laws than your country of residence.</p>
+          <p>For transfers from the EEA, we rely on Standard Contractual Clauses and other approved transfer mechanisms to ensure adequate protection.</p>
 
           <h2>12. Changes to This Privacy Policy</h2>
-          <p>We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised "Effective Date." Continued use of the App after changes means you accept the updated policy.</p>
+          <p>We may update this Privacy Policy from time to time. Changes will be posted with a revised effective date. For material changes (especially those affecting sensitive data processing), we will notify you through the App. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
 
           <h2>13. Contact Information</h2>
+          <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, contact us at:</p>
           <p><strong>Alexandr Nadtoka</strong><br />
           Email: <a href="mailto:nadtoka.o.work@gmail.com">nadtoka.o.work@gmail.com</a></p>
 
@@ -196,114 +304,184 @@
 
       <!-- Russian -->
       <div id="lang-ru" style="display:none">
-        <div class="legal-meta">Дата вступления в силу: 02 марта 2026 г. &nbsp;·&nbsp; Разработчик: Александр Надтока</div>
+        <div class="legal-meta">Дата вступления в силу: 13 апреля 2026 г. &nbsp;&middot;&nbsp; Разработчик: Александр Надтока</div>
         <div class="legal-content">
 
-          <p>Teso: Couples («Приложение», «мы», «нас» или «наш») уважает вашу конфиденциальность. Настоящая Политика конфиденциальности объясняет, какие данные мы собираем, как используем и защищаем вашу информацию при использовании мобильного приложения <strong>Teso: Couples</strong>, доступного в App Store.</p>
-          <p>Используя Приложение, вы соглашаетесь на сбор и использование информации в соответствии с настоящей Политикой конфиденциальности.</p>
+          <p>Teso: Couples (далее &laquo;Приложение&raquo;) &mdash; это приложение-компаньон для пар, которое помогает отслеживать совместные события, изучать темы для общения и разрешать конфликты с помощью AI-анализа. Настоящая Политика конфиденциальности описывает, какие данные мы собираем, как мы их используем, кому передаём и какие у вас есть права.</p>
+          <p>Используя Приложение, вы соглашаетесь с практиками, описанными в данной политике. Если вы не согласны, пожалуйста, не используйте Приложение.</p>
 
           <h2>1. Какую информацию мы собираем</h2>
 
           <h3>1.1 Информация, которую вы предоставляете</h3>
-          <p>При использовании Приложения мы можем собирать:</p>
           <ul>
-            <li><strong>Имя</strong></li>
-            <li><strong>Адрес электронной почты</strong></li>
-            <li>Данные аутентификации при входе через:
-              <ul>
-                <li>Apple Sign In</li>
-                <li>Google Sign-In</li>
-              </ul>
-            </li>
-            <li>Контент, который вы создаёте в Приложении, например:
-              <ul>
-                <li>События (например, свидания, киновечера, интимные встречи)</li>
-                <li>Свайпы карточек и предпочтения</li>
-                <li>Ответы и мнения в функции разрешения конфликтов</li>
-              </ul>
-            </li>
+            <li><strong>Данные учётной записи:</strong> имя, адрес электронной почты и данные аутентификации при входе через Apple или Google.</li>
+            <li><strong>Подключение партнёра:</strong> уникальный код пары для связи вашего аккаунта с партнёром.</li>
+            <li><strong>События:</strong> события, которые вы создаёте (например, свидания, совместные вечера, события близости), включая названия, даты и заметки.</li>
+            <li><strong>Взаимодействие с карточками:</strong> ваши свайпы и предпочтения по карточкам общения/активностей.</li>
+            <li><strong>Список желаний:</strong> элементы, которые вы добавляете в общие списки желаний.</li>
           </ul>
 
-          <h3>1.2 Автоматически собираемая информация</h3>
-          <p>Мы можем автоматически собирать определённую техническую информацию, включая:</p>
+          <h3>1.2 Данные разрешения конфликтов (чувствительные данные)</h3>
+          <div class="legal-highlight">
+            Функция разрешения конфликтов собирает данные, которые могут считаться <strong>чувствительными персональными данными особой категории</strong> в соответствии с применимыми законами о конфиденциальности (включая статью 9 GDPR), поскольку они касаются вашего эмоционального состояния и интимных отношений. Мы обрабатываем эти данные только с вашего явного согласия, которое вы предоставляете каждый раз при отправке записи о конфликте.
+          </div>
+          <p>При использовании функции разрешения конфликтов мы собираем:</p>
           <ul>
-            <li>Тип устройства</li>
-            <li>Версию iOS</li>
-            <li>Версию приложения</li>
-            <li>Анонимные данные об использовании</li>
-            <li>Диагностические данные и отчёты о сбоях</li>
+            <li><strong>Тему конфликта</strong> (выбранную или написанную вами)</li>
+            <li><strong>Описание произошедшего</strong> (свободный текст)</li>
+            <li><strong>Оценку эмоциональной интенсивности</strong> (шкала 1&ndash;10)</li>
+            <li><strong>Что было важным или болезненным</strong> (свободный текст)</li>
+            <li><strong>Вашу признанную ответственность</strong> (свободный текст)</li>
+            <li><strong>Чего вы хотите от ситуации</strong> (свободный текст)</li>
+            <li><strong>Уточнённый AI-текст</strong> (если вы запросили переписывание вашей записи)</li>
+            <li><strong>AI-анализ</strong> (терапевтические выводы, сгенерированные на основе записей обоих партнёров)</li>
+            <li><strong>Обратную связь</strong> о полезности анализа</li>
+          </ul>
+          <p>Вы и ваш партнёр можете видеть записи друг друга и общий анализ после разрешения конфликта.</p>
+
+          <h3>1.3 Автоматически собираемая информация</h3>
+          <ul>
+            <li>Тип и модель устройства</li>
+            <li>Версия iOS</li>
+            <li>Версия приложения</li>
+            <li>Анонимные данные об использовании и диагностике</li>
+            <li>Отчёты о сбоях</li>
           </ul>
 
           <h2>2. Как мы используем вашу информацию</h2>
-          <p>Мы используем собранную информацию для:</p>
           <ul>
-            <li>Создания и управления вашей учётной записью</li>
-            <li>Подключения к вашему партнёру</li>
-            <li>Синхронизации совпавших карточек между партнёрами</li>
-            <li>Предоставления AI-функции разрешения конфликтов</li>
-            <li>Управления подписками и премиум-доступом</li>
-            <li>Улучшения работы приложения и пользовательского опыта</li>
-            <li>Проведения аналитики и диагностики</li>
-            <li>Обеспечения безопасности и предотвращения мошенничества</li>
+            <li>Создание и управление вашей учётной записью</li>
+            <li>Подключение к вашему партнёру</li>
+            <li>Синхронизация событий, карточек и списков желаний между партнёрами</li>
+            <li>Обработка записей о конфликтах и генерация AI-анализа</li>
+            <li>Управление подписками и премиум-функциями</li>
+            <li>Улучшение Приложения с помощью аналитики</li>
+            <li>Отправка сервисных уведомлений (например, когда партнёр отправил свою запись)</li>
+            <li>Обнаружение и предотвращение мошенничества или злоупотреблений</li>
           </ul>
-          <p>Мы <strong>не продаём</strong> вашу персональную информацию.</p>
+          <p>Мы <strong>не продаём</strong> вашу личную информацию. Мы <strong>не используем</strong> ваши данные для рекламы.</p>
 
-          <h2>3. Сторонние сервисы</h2>
+          <h2>3. Сторонние сервисы и передача данных</h2>
+          <p>Мы передаём ваши данные следующим сторонним поставщикам услуг исключительно для работы Приложения:</p>
 
-          <h3>3.1 Firebase</h3>
-          <p>Мы используем Firebase (Google LLC) для аутентификации, аналитики, отчётов о сбоях и серверной инфраструктуры.</p>
-          <p>Политика конфиденциальности Firebase: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
-
-          <h3>3.2 RevenueCat</h3>
-          <p>Мы используем RevenueCat для управления подписками и встроенными покупками. RevenueCat может обрабатывать статус подписки, историю покупок и анонимные идентификаторы.</p>
-          <p>Политика конфиденциальности RevenueCat: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></p>
-
-          <h3>3.3 Провайдеры входа</h3>
-          <p>Если вы используете Apple Sign-In или Google Sign-In, соответствующие провайдеры могут обрабатывать данные аутентификации в соответствии со своими политиками конфиденциальности.</p>
+          <table>
+            <tr>
+              <th>Поставщик</th>
+              <th>Назначение</th>
+              <th>Передаваемые данные</th>
+            </tr>
+            <tr>
+              <td><strong>Supabase, Inc.</strong></td>
+              <td>Серверная инфраструктура, база данных, аутентификация, синхронизация в реальном времени</td>
+              <td>Все данные учётной записи, событий, карточек, списков желаний и конфликтов. Хранятся на серверах Supabase (AWS, регионы США).</td>
+            </tr>
+            <tr>
+              <td><strong>OpenAI, L.L.C.</strong></td>
+              <td>AI-анализ конфликтов и улучшение текста</td>
+              <td>Записи о конфликтах (тема, описания, эмоциональные данные) отправляются в API OpenAI для обработки. Подробнее в Разделе 4.</td>
+            </tr>
+            <tr>
+              <td><strong>RevenueCat, Inc.</strong></td>
+              <td>Управление подписками и покупками</td>
+              <td>Анонимный ID пользователя, чеки покупок, статус подписки.</td>
+            </tr>
+            <tr>
+              <td><strong>Apple Inc.</strong></td>
+              <td>Вход через Apple, платежи App Store, отчёты о сбоях</td>
+              <td>Токены аутентификации, обработка платежей (мы не видим ваши платёжные данные), диагностика.</td>
+            </tr>
+            <tr>
+              <td><strong>Google LLC</strong></td>
+              <td>Вход через Google</td>
+              <td>Токены аутентификации, базовый профиль (имя, email) при выборе входа через Google.</td>
+            </tr>
+            <tr>
+              <td><strong>Google Firebase</strong></td>
+              <td>Push-уведомления, отчёты о сбоях</td>
+              <td>Токены устройств, логи сбоев. Firebase <em>не</em> используется в качестве основной базы данных.</td>
+            </tr>
+          </table>
 
           <h2>4. Функция AI-разрешения конфликтов</h2>
-          <p>Приложение включает функцию разрешения конфликтов на основе ИИ, доступную пользователям с активной подпиской.</p>
-          <p>Когда вы и ваш партнёр отправляете свои мнения:</p>
+          <p>При использовании функции разрешения конфликтов ваш текст и эмоциональные данные отправляются в <strong>API OpenAI</strong> (модели: GPT-4o и GPT-4o-mini) для обработки. А именно:</p>
           <ul>
-            <li>Отправленный текст обрабатывается для генерации анализа.</li>
-            <li>Данные могут временно обрабатываться защищёнными AI-провайдерами.</li>
-            <li>Мы не используем ваши личные данные конфликтов для рекламы.</li>
-            <li>Мы не продаём эту информацию.</li>
+            <li><strong>Улучшение текста:</strong> если вы запрашиваете AI-переписывание, ваша запись отправляется в OpenAI для генерации версии на основе принципов Ненасильственного общения (ННО).</li>
+            <li><strong>Генерация темы:</strong> тема и описание инициатора отправляются для создания нейтрального названия темы, отображаемого партнёру.</li>
+            <li><strong>Полный анализ:</strong> после отправки записей обоими партнёрами обе записи (описания, эмоциональные оценки, признанная ответственность, желания) отправляются в OpenAI для генерации терапевтического анализа.</li>
           </ul>
-          <p>Мы стремимся минимизировать хранение чувствительного контента и обеспечить защиту вашей конфиденциальности.</p>
-
-          <h2>5. Подписки</h2>
-          <p>Teso: Couples предлагает дополнительные подписки, которые открывают функцию разрешения конфликтов, дополнительные наборы карточек и премиум-функции. Все платежи обрабатываются через App Store компании Apple. Мы не храним и не обрабатываем напрямую ваши платёжные данные.</p>
-
-          <h2>6. Хранение данных и безопасность</h2>
-          <p>Мы применяем разумные технические и организационные меры для защиты ваших данных. Однако ни один способ электронной передачи или хранения данных не является на 100% безопасным. Несмотря на наши усилия, мы не можем гарантировать абсолютную безопасность.</p>
-
-          <h2>7. Срок хранения данных</h2>
-          <p>Мы храним вашу информацию:</p>
+          <p><strong>Важно:</strong></p>
           <ul>
-            <li>Пока ваша учётная запись активна</li>
-            <li>В объёме, необходимом для предоставления услуг</li>
-            <li>В случаях, предусмотренных законодательством</li>
+            <li>Ваши данные передаются в OpenAI через зашифрованные HTTPS-соединения.</li>
+            <li>Согласно политике использования данных API OpenAI, входные и выходные данные API <strong>не используются для обучения моделей OpenAI</strong>.</li>
+            <li>Мы не включаем ваше имя, email или идентификаторы учётной записи в запросы к OpenAI.</li>
+            <li>OpenAI может хранить данные API до 30 дней для мониторинга злоупотреблений, после чего они удаляются. Подробнее: <a href="https://openai.com/policies/api-data-usage-policies" target="_blank" rel="noopener">Политика использования данных API OpenAI</a>.</li>
           </ul>
-          <p>Вы можете запросить удаление вашей учётной записи и связанных данных в любое время (см. Раздел 10).</p>
+
+          <h2>5. Хранение и безопасность данных</h2>
+          <p>Ваши данные хранятся в инфраструктуре <strong>Supabase</strong> на базе Amazon Web Services (AWS) в Соединённых Штатах. Данные шифруются при передаче (TLS) и при хранении (AES-256).</p>
+          <p>Мы применяем разумные технические и организационные меры для защиты ваших данных, включая:</p>
+          <ul>
+            <li>Политики безопасности на уровне строк (RLS), гарантирующие, что только вы и ваш партнёр имеете доступ к вашим общим данным</li>
+            <li>Зашифрованные соединения для всей передачи данных</li>
+            <li>Безопасную аутентификацию через провайдеров Apple и Google</li>
+          </ul>
+          <p>Однако ни один метод электронной передачи или хранения не является абсолютно безопасным. Мы не можем гарантировать абсолютную безопасность.</p>
+
+          <h2>6. Сроки хранения данных</h2>
+          <ul>
+            <li><strong>Данные учётной записи:</strong> хранятся, пока ваша учётная запись активна.</li>
+            <li><strong>Данные конфликтов:</strong> хранятся, пока ваша учётная запись активна. Вы можете запросить удаление в любое время (см. Раздел 9).</li>
+            <li><strong>Обработка OpenAI:</strong> OpenAI может хранить данные запросов API до 30 дней для мониторинга злоупотреблений, затем удаляет их.</li>
+            <li><strong>Аналитика и данные о сбоях:</strong> хранятся в анонимизированной/агрегированной форме.</li>
+          </ul>
+          <p>При удалении учётной записи ваши персональные данные удаляются из активных систем в течение 30 дней, за исключением случаев, когда их хранение требуется по закону.</p>
+
+          <h2>7. Подписки</h2>
+          <p>Teso предлагает дополнительные подписки внутри приложения, которые открывают доступ к премиум-функциям, включая разрешение конфликтов, дополнительные наборы карточек и другое. Все платежи обрабатываются через <strong>Apple App Store</strong>. Мы не храним и не обрабатываем вашу платёжную информацию напрямую. Статус подписки управляется RevenueCat.</p>
 
           <h2>8. Конфиденциальность детей</h2>
-          <p>Приложение не предназначено для лиц младше 16 лет. Мы сознательно не собираем персональные данные детей.</p>
+          <p>Приложение не предназначено для лиц младше 16 лет. Мы сознательно не собираем персональные данные детей. Если вы считаете, что ребёнок предоставил нам свои данные, немедленно свяжитесь с нами.</p>
 
           <h2>9. Ваши права</h2>
-          <p>В зависимости от вашего местоположения вы можете иметь следующие права: доступ к своим данным, исправление неточных данных, удаление данных и отзыв согласия.</p>
-          <p>Для реализации этих прав свяжитесь с нами: <a href="mailto:nadtoka.o.work@gmail.com">nadtoka.o.work@gmail.com</a></p>
+          <p>В зависимости от вашего местоположения вы можете обладать следующими правами:</p>
+          <ul>
+            <li><strong>Доступ:</strong> запросить копию хранящихся у нас персональных данных.</li>
+            <li><strong>Исправление:</strong> запросить исправление неточных данных.</li>
+            <li><strong>Удаление:</strong> запросить удаление ваших персональных данных.</li>
+            <li><strong>Переносимость данных:</strong> запросить данные в структурированном, машиночитаемом формате.</li>
+            <li><strong>Ограничение:</strong> запросить ограничение обработки в определённых обстоятельствах.</li>
+            <li><strong>Возражение:</strong> возразить против обработки на основе законных интересов.</li>
+            <li><strong>Отзыв согласия:</strong> отозвать согласие на обработку чувствительных данных (разрешение конфликтов) в любое время, без ущерба для законности предшествующей обработки.</li>
+          </ul>
+          <p>Для реализации любого из этих прав свяжитесь с нами по адресу <strong><a href="mailto:nadtoka.o.work@gmail.com">nadtoka.o.work@gmail.com</a></strong>. Мы ответим в течение 30 дней.</p>
 
-          <h2>10. Удаление аккаунта</h2>
-          <p>Вы можете запросить удаление аккаунта через функцию удаления в приложении (если доступна) или связавшись с нами по электронной почте. После удаления ваши персональные данные будут удалены из активных систем в разумный срок, за исключением случаев, когда их хранение требуется по закону.</p>
+          <h3>9.1 Для пользователей из Европейской экономической зоны (ЕЭЗ)</h3>
+          <p>Если вы находитесь в ЕЭЗ, правовые основания для обработки ваших персональных данных:</p>
+          <ul>
+            <li><strong>Договор:</strong> обработка, необходимая для предоставления услуг Приложения (учётная запись, синхронизация с партнёром, события).</li>
+            <li><strong>Явное согласие:</strong> обработка чувствительных данных в функции разрешения конфликтов (GDPR, статья 9(2)(a)). Вы предоставляете это согласие каждый раз при отправке записи о конфликте. Вы можете отозвать согласие в любое время.</li>
+            <li><strong>Законный интерес:</strong> аналитика, предотвращение мошенничества и улучшение Приложения.</li>
+          </ul>
+          <p>Ваши данные передаются в Соединённые Штаты (Supabase/AWS и OpenAI). Эти передачи защищены Стандартными договорными условиями (SCC) или эквивалентными механизмами.</p>
+          <p>Вы имеете право подать жалобу в местный орган по защите данных.</p>
+
+          <h2>10. Удаление учётной записи</h2>
+          <p>Вы можете запросить удаление учётной записи через настройки в приложении или связавшись с нами по адресу <strong><a href="mailto:nadtoka.o.work@gmail.com">nadtoka.o.work@gmail.com</a></strong>. При удалении:</p>
+          <ul>
+            <li>Ваша личная информация удаляется из активных систем в течение 30 дней.</li>
+            <li>Общие данные (события, конфликты), связанные с вашей парой, могут быть анонимизированы или удалены.</li>
+            <li>Некоторые данные могут быть сохранены, если это требуется по закону.</li>
+          </ul>
 
           <h2>11. Международная передача данных</h2>
-          <p>Ваша информация может обрабатываться и храниться в странах за пределами вашей страны проживания. Используя Приложение, вы соглашаетесь на такую передачу данных при необходимости.</p>
+          <p>Ваша информация может быть передана и обработана в <strong>Соединённых Штатах</strong>, где работают наши поставщики услуг (Supabase, OpenAI). Используя Приложение, вы даёте согласие на передачу вашей информации в Соединённые Штаты и другие юрисдикции, которые могут иметь иные законы о защите данных, чем ваша страна проживания.</p>
+          <p>Для передачи данных из ЕЭЗ мы используем Стандартные договорные условия и другие одобренные механизмы передачи для обеспечения надлежащей защиты.</p>
 
-          <h2>12. Изменения в Политике конфиденциальности</h2>
-          <p>Мы можем периодически обновлять настоящую Политику конфиденциальности. Обновления будут публиковаться на этой странице с указанием новой «Даты вступления в силу». Продолжение использования Приложения после внесения изменений означает ваше согласие с обновлённой версией.</p>
+          <h2>12. Изменения в настоящей Политике конфиденциальности</h2>
+          <p>Мы можем время от времени обновлять настоящую Политику конфиденциальности. Изменения публикуются с обновлённой датой вступления в силу. При существенных изменениях (особенно касающихся обработки чувствительных данных) мы уведомим вас через Приложение. Продолжение использования Приложения после изменений означает принятие обновлённой политики.</p>
 
           <h2>13. Контактная информация</h2>
+          <p>Если у вас есть вопросы, замечания или запросы относительно настоящей Политики конфиденциальности или ваших персональных данных, свяжитесь с нами:</p>
           <p><strong>Александр Надтока</strong><br />
           Email: <a href="mailto:nadtoka.o.work@gmail.com">nadtoka.o.work@gmail.com</a></p>
 
@@ -319,7 +497,6 @@
       <div class="footer-links">
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
         <a href="/">Home</a>
         <a href="/ru/apps/teso/privacy.html" class="lang-toggle">RU</a>
       </div>
