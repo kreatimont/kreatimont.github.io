@@ -15,15 +15,25 @@
   <meta property="og:title" content="Поддержка — City Transport" />
   <meta property="og:description" content="Помощь и поддержка для City Transport — GPS-трекера общественного транспорта." />
   <meta property="og:url" content="https://kreatimont.com/ru/apps/city-transport/support.html" />
-  <meta property="og:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta property="og:image" content="https://kreatimont.com/assets/images/apps/city-transport-og.jpg" />
   <meta property="og:locale" content="ru_RU" />
   <meta property="og:locale:alternate" content="en_US" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Поддержка — City Transport" />
   <meta name="twitter:description" content="Помощь и поддержка для City Transport — GPS-трекера общественного транспорта." />
-  <meta name="twitter:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/city-transport-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="author" content="Alexandr Nadtoka" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="City Transport" />
   <link rel="stylesheet" href="../../../assets/css/style.css" />
   <script type="application/ld+json">
   {
@@ -37,10 +47,75 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Какие города поддерживаются?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "City Transport охватывает 28+ украинских городов: Киев, Львов, Харьков, Одессу, Днепр и многие другие. Полный список — в приложении."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "На карте не отображается транспорт. Что проверить?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Убедитесь, что есть активное интернет-соединение. Данные о транспорте загружаются через сеть. Попробуйте потянуть вниз для обновления или нажать кнопку ручного обновления. Если проблема сохраняется, поставщик данных для этого города может временно быть недоступен."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как часто обновляются данные о транспорте?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Интервал обновления настраивается в Настройках — выберите предустановленный интервал или переключитесь в режим ручного обновления, обновляя данные при нажатии кнопки."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Нужно ли разрешать доступ к геолокации?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Нет. Доступ к геолокации полностью опционален. При наличии разрешения приложение использует его только для центрирования карты на текущей позиции. Все функции работают без передачи геоданных."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как убрать рекламу?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Рекламу можно убрать через встроенную покупку в Настройках. Это разовая покупка — без подписки."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как восстановить покупку?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Перейдите в Настройки в приложении и нажмите «Восстановить покупки». Убедитесь, что вы вошли с тем же Apple ID, который использовался при оплате."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как переключить тему оформления?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Откройте Настройки в приложении и выберите нужную тему — светлую, тёмную или системную, которая следует за настройками iOS."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/ru/">Alexandr Nadtoka</a>
       <ul class="nav-links">
@@ -50,9 +125,10 @@
       </ul>
     </div>
   </nav>
+  <a id="main-content" tabindex="-1"></a>
 
   <div class="container">
-    <div class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/ru/">Главная</a>
       <span>/</span>
       <a href="/ru/#apps">Приложения</a>
@@ -60,11 +136,11 @@
       <a href="index.html">City Transport</a>
       <span>/</span>
       <span>Поддержка</span>
-    </div>
+    </nav>
   </div>
 
   <div class="container" style="margin-top: 8px;">
-    <nav class="page-nav">
+    <nav class="page-nav" aria-label="App sections">
       <a href="index.html">Обзор</a>
       <a href="support.html" class="active">Поддержка</a>
       <a href="privacy.html">Конфиденциальность</a>
@@ -141,12 +217,12 @@
 
       <div class="contact-box">
         <div>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent); flex-shrink: 0; margin-top: 2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent); flex-shrink: 0; margin-top: 2px;"><use href="/assets/images/sprite.svg#email-outline"/></svg>
         </div>
         <div class="contact-box-text">
           <h3>Нужна дополнительная помощь?</h3>
           <p>Напишите мне на почту — отвечу как можно скорее.</p>
-          <a href="mailto:nadtoka.alexandr@gmail.com" class="btn btn-primary mt-16" style="font-size: 0.875rem; padding: 10px 20px;">
+          <a href="mailto:nadtoka.alexandr@gmail.com" class="btn btn-primary mt-16 btn-md">
             nadtoka.alexandr@gmail.com
           </a>
         </div>
@@ -157,7 +233,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span>&copy; <script>document.write(new Date().getFullYear())</script> Alexandr Nadtoka. Все права защищены.</span>
+      <span>&copy; 2026 Alexandr Nadtoka. Все права защищены.</span>
       <div class="footer-links">
         <a href="support.html">Поддержка</a>
         <a href="privacy.html">Конфиденциальность</a>

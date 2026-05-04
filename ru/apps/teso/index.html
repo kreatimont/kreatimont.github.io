@@ -15,15 +15,25 @@
   <meta property="og:title" content="Teso: Couples — Ежедневные вопросы для близости" />
   <meta property="og:description" content="Teso помогает парам чувствовать себя ближе через простые ежедневные вопросы, совместные размышления и осознанные моменты. Доступно на iOS." />
   <meta property="og:url" content="https://kreatimont.com/ru/apps/teso/" />
-  <meta property="og:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta property="og:image" content="https://kreatimont.com/assets/images/apps/teso-og.jpg" />
   <meta property="og:locale" content="ru_RU" />
   <meta property="og:locale:alternate" content="en_US" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Teso: Couples — Ежедневные вопросы для близости" />
   <meta name="twitter:description" content="Teso помогает парам чувствовать себя ближе через простые ежедневные вопросы, совместные размышления и осознанные моменты. Доступно на iOS." />
-  <meta name="twitter:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/teso-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="author" content="Alexandr Nadtoka" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Teso" />
   <link rel="stylesheet" href="../../../assets/css/style.css" />
   <script type="application/ld+json">
   {
@@ -54,8 +64,9 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/ru/">Alexandr Nadtoka</a>
       <ul class="nav-links">
@@ -65,15 +76,16 @@
       </ul>
     </div>
   </nav>
+  <a id="main-content" tabindex="-1"></a>
 
   <div class="container">
-    <div class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/ru/">Главная</a>
       <span>/</span>
       <a href="/ru/#apps">Приложения</a>
       <span>/</span>
       <span>Teso: Couples</span>
-    </div>
+    </nav>
   </div>
 
   <div class="app-hero">
@@ -94,7 +106,7 @@
   </div>
 
   <div class="container">
-    <nav class="page-nav">
+    <nav class="page-nav" aria-label="App sections">
       <a href="index.html" class="active">Обзор</a>
       <a href="support.html">Поддержка</a>
       <a href="privacy.html">Конфиденциальность</a>
@@ -198,9 +210,23 @@
     </div>
   </section>
 
+  <!-- Screenshots -->
+  <section>
+    <div class="container">
+      <p class="section-label">Скриншоты</p>
+      <h2 class="section-title">Посмотри</h2>
+      <p class="section-subtitle">Краткий взгляд на ежедневный опыт пар, использующих Teso.</p>
+      <div class="screenshots-row">
+        <img src="/assets/images/apps/teso-screen-1.webp" alt="Teso: Couples скриншот 1" width="540" height="1170" loading="lazy" decoding="async" class="screenshot" />
+        <img src="/assets/images/apps/teso-screen-2.webp" alt="Teso: Couples скриншот 2" width="540" height="1170" loading="lazy" decoding="async" class="screenshot" />
+        <img src="/assets/images/apps/teso-screen-3.webp" alt="Teso: Couples скриншот 3" width="540" height="1170" loading="lazy" decoding="async" class="screenshot" />
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="footer-inner">
-      <span>&copy; <script>document.write(new Date().getFullYear())</script> Alexandr Nadtoka. Все права защищены.</span>
+      <span>&copy; 2026 Alexandr Nadtoka. Все права защищены.</span>
       <div class="footer-links">
         <a href="support.html">Поддержка</a>
         <a href="privacy.html">Конфиденциальность</a>

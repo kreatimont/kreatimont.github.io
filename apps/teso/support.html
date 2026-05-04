@@ -15,15 +15,25 @@
   <meta property="og:title" content="Support — Teso: Couples" />
   <meta property="og:description" content="Get help and support for Teso: Couples." />
   <meta property="og:url" content="https://kreatimont.com/apps/teso/support.html" />
-  <meta property="og:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta property="og:image" content="https://kreatimont.com/assets/images/apps/teso-og.jpg" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ru_RU" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Support — Teso: Couples" />
   <meta name="twitter:description" content="Get help and support for Teso: Couples." />
-  <meta name="twitter:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/teso-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="author" content="Alexandr Nadtoka" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Teso" />
   <link rel="stylesheet" href="../../assets/css/style.css" />
   <script type="application/ld+json">
   {
@@ -37,10 +47,75 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I connect with my partner?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After creating your account, you'll receive a unique invite link or code to share with your partner. Once they sign up and enter your code, you'll be connected and can start sharing daily prompts together."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When do our answers reveal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Answers to daily prompts only reveal after both you and your partner have responded. This ensures a moment of genuine mutual sharing — no one sees the other's answer early."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the AI conflict resolution feature?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When you and your partner each share your perspective on a disagreement, Teso's AI analyzes both sides and offers a thoughtful, balanced reflection. It's not therapy — it's a structured space to be heard and understand each other better. This feature is available to subscribers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Your reflections and conversations are private between you and your partner. We do not sell your data or use your personal content for advertising. See the Privacy Policy for full details."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do subscriptions work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Teso offers an optional subscription that unlocks premium features including AI conflict resolution and additional card packs. Subscriptions are managed through your Apple ID and automatically renew unless canceled at least 24 hours before the renewal date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I cancel my subscription?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Go to your iPhone's Settings → Apple ID → Subscriptions and cancel from there. You'll retain access until the end of the current billing period."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I delete my account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can request account deletion via the in-app settings or by emailing us at nadtoka.o.work@gmail.com. All your data will be removed from active systems within a reasonable timeframe."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/">Alexandr Nadtoka</a>
       <ul class="nav-links">
@@ -50,9 +125,10 @@
       </ul>
     </div>
   </nav>
+  <a id="main-content" tabindex="-1"></a>
 
   <div class="container">
-    <div class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
       <a href="/#apps">Apps</a>
@@ -60,11 +136,11 @@
       <a href="index.html">Teso: Couples</a>
       <span>/</span>
       <span>Support</span>
-    </div>
+    </nav>
   </div>
 
   <div class="container" style="margin-top: 8px;">
-    <nav class="page-nav">
+    <nav class="page-nav" aria-label="App sections">
       <a href="index.html">Overview</a>
       <a href="support.html" class="active">Support</a>
       <a href="privacy.html">Privacy Policy</a>
@@ -145,12 +221,12 @@
 
       <div class="contact-box">
         <div>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent); flex-shrink: 0; margin-top: 2px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent); flex-shrink: 0; margin-top: 2px;"><use href="/assets/images/sprite.svg#email-outline"/></svg>
         </div>
         <div class="contact-box-text">
           <h3>Still need help?</h3>
           <p>Send me an email and I'll get back to you as soon as possible.</p>
-          <a href="mailto:nadtoka.o.work@gmail.com" class="btn btn-primary mt-16" style="font-size: 0.875rem; padding: 10px 20px;">
+          <a href="mailto:nadtoka.o.work@gmail.com" class="btn btn-primary mt-16 btn-md">
             nadtoka.o.work@gmail.com
           </a>
         </div>
@@ -161,7 +237,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span>&copy; <script>document.write(new Date().getFullYear())</script> Alexandr Nadtoka. All rights reserved.</span>
+      <span>&copy; 2026 Alexandr Nadtoka. All rights reserved.</span>
       <div class="footer-links">
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy Policy</a>

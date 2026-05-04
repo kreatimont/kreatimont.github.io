@@ -15,15 +15,25 @@
   <meta property="og:title" content="Поддержка — My Clients" />
   <meta property="og:description" content="Ответы на часто задаваемые вопросы о My Clients — органайзере клиентов для iOS и Android." />
   <meta property="og:url" content="https://kreatimont.com/ru/apps/my-clients/support.html" />
-  <meta property="og:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta property="og:image" content="https://kreatimont.com/assets/images/apps/my-clients-og.jpg" />
   <meta property="og:locale" content="ru_RU" />
   <meta property="og:locale:alternate" content="en_US" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Поддержка — My Clients" />
   <meta name="twitter:description" content="Ответы на часто задаваемые вопросы о My Clients — органайзере клиентов для iOS и Android." />
-  <meta name="twitter:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/my-clients-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="author" content="Alexandr Nadtoka" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="My Clients" />
   <link rel="stylesheet" href="../../../assets/css/style.css" />
   <style>
     .support-hero { padding: 40px 0 32px; }
@@ -64,10 +74,83 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Как добавить клиента?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Нажмите кнопку + на главном экране, чтобы открыть форму нового клиента. Введите имя, контактные данные и любые заметки — затем сохраните. Клиент сразу появится в списке. Также можно вставить ссылку на профиль Instagram прямо в поле имени. My Clients автоматически распознает её, отобразит имя пользователя в списке и позволит открыть Instagram-страницу одним нажатием прямо из вида записей — удобно для мастеров, стилистов и всех, кто общается с клиентами через Instagram. 💡 Вставьте полную URL Instagram (например, https://instagram.com/username ) в поле имени, чтобы включить быстрый переход из списка записей."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как работают напоминания о записях?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Напоминания работают автоматически — никаких дополнительных действий не требуется. Просто создайте запись с датой и временем. My Clients уведомит вас за 30 минут до записи (или в выбранный вами интервал в Настройках), так что вы никогда не будете застигнуты врасплох. Отдельного переключателя напоминаний нет. Просто задайте время записи — всё остальное сделает приложение. 🔔 Обязательно разрешите уведомления при первом запуске — это необходимо для получения напоминаний. Интервал можно изменить в Настройки → Время напоминания ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Делается ли резервная копия моих данных?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да — резервные копии создаются автоматически. Когда iCloud доступен на устройстве, My Clients сохраняет резервную копию данных в вашем личном аккаунте iCloud. Никаких настроек не требуется. Это позволяет легко восстановить записи клиентов после переустановки приложения или перейти на новое устройство без потери данных. Также можно в любое время экспортировать и поделиться копией данных прямо из приложения. ☁️ Резервные копии хранятся в вашем личном аккаунте iCloud — доступ есть только у вас. Если iCloud недоступен, данные хранятся только локально на устройстве."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Что входит в подписку Premium?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Premium открывает полный функционал My Clients без ограничений: Без рекламы — пользуйтесь приложением без рекламных объявлений. Детальная статистика — анализируйте эффективность бизнеса по месяцам, годам или любому выбранному периоду. Учёт расходов — записывайте и отслеживайте расходы рядом с активностью клиентов для полной картины финансов. Бесплатная версия включает все основные функции — записи клиентов, записи на приём и базовую статистику. Premium — для тех, кто хочет глубокую аналитику и рабочее пространство без отвлечений."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как восстановить подписку Premium?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Если вы ранее оформляли Premium и хотите восстановить его — например, после переустановки или смены устройства: Когда появится экран подписки, найдите ссылку Восстановить покупки в верхней части экрана. Нажмите — подписка восстановится автоматически, если вы вошли с тем же Apple ID, который использовался при покупке. ℹ️ Восстановление покупки всегда бесплатно и занимает секунды. Платить повторно не нужно."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Можно ли быстро позвонить, написать или открыть профиль клиента?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да — просто удержите (долгое нажатие) любую запись на главном экране, чтобы открыть меню быстрых действий. Оттуда можно: 📲 Открыть Instagram — переходит напрямую в профиль клиента, если сохранена ссылка Instagram. ✏️ Редактировать запись — изменить данные клиента, не открывая полный профиль. 📞 Позвонить — набирает номер телефона клиента немедленно. 💬 Написать SMS — открывает новое сообщение клиенту в стандартном приложении. 👆 Достаточно одного долгого нажатия — не нужно искать в меню. Самый быстрый способ связаться с клиентом перед его приёмом."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Сколько памяти нужно приложению?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Поскольку все данные хранятся непосредственно на устройстве — без облачных серверов — My Clients нужно достаточно свободного места для надёжного сохранения записей. Рекомендуем держать не менее 500 МБ свободного места на телефоне. При нехватке места приложение может не суметь сохранить новые записи или создать резервную копию. Проверить доступное место можно в Настройки → Основные → Хранилище iPhone на iOS или Настройки → Хранилище на Android. 📦 Следить за хранилищем телефона — хорошая практика в целом: это помогает всем приложениям работать стабильно, не только My Clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Мои данные о клиентах в безопасности?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Абсолютно. Данные о клиентах никогда не покидают вашу личную экосистему — они хранятся либо локально на устройстве, либо синхронизируются с вашим аккаунтом iCloud. При включённой синхронизации iCloud данные резервируются только в вашем личном аккаунте iCloud — никому другому они недоступны. Если хотите хранить всё локально, просто отключите синхронизацию iCloud. В любом случае, данные никогда не отправляются на наши серверы и не передаются третьим сторонам . Информация о ваших клиентах — только ваша. Подробности — в нашей Политике конфиденциальности."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/ru/">Alexandr Nadtoka</a>
       <ul class="nav-links">
@@ -77,9 +160,10 @@
       </ul>
     </div>
   </nav>
+  <a id="main-content" tabindex="-1"></a>
 
   <div class="container">
-    <div class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/ru/">Главная</a>
       <span>/</span>
       <a href="/ru/#apps">Приложения</a>
@@ -87,11 +171,11 @@
       <a href="index.html">My Clients</a>
       <span>/</span>
       <span>Поддержка</span>
-    </div>
+    </nav>
   </div>
 
   <div class="container" style="margin-top: 8px;">
-    <nav class="page-nav">
+    <nav class="page-nav" aria-label="App sections">
       <a href="index.html">Обзор</a>
       <a href="support.html" class="active">Поддержка</a>
       <a href="privacy.html">Конфиденциальность</a>
@@ -215,15 +299,12 @@
 
       <div class="contact-card">
         <div class="contact-card-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#498DF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#498DF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/images/sprite.svg#email-outline"/></svg>
         </div>
         <div class="contact-card-body">
           <h3>Нужна дополнительная помощь?</h3>
           <p>Напишите на email — я отвечу как можно скорее, обычно в течение дня.</p>
-          <a href="mailto:client.book.helper@gmail.com" class="btn btn-primary" style="font-size: 0.875rem; padding: 10px 20px;">
+          <a href="mailto:client.book.helper@gmail.com" class="btn btn-primary btn-md">
             client.book.helper@gmail.com
           </a>
         </div>
@@ -234,7 +315,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span>&copy; <script>document.write(new Date().getFullYear())</script> Alexandr Nadtoka. Все права защищены.</span>
+      <span>&copy; 2026 Alexandr Nadtoka. Все права защищены.</span>
       <div class="footer-links">
         <a href="support.html">Поддержка</a>
         <a href="privacy.html">Конфиденциальность</a>

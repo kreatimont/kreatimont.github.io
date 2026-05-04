@@ -15,15 +15,25 @@
   <meta property="og:title" content="Политика конфиденциальности — My Clients" />
   <meta property="og:description" content="Политика конфиденциальности My Clients. Данные хранятся на вашем устройстве." />
   <meta property="og:url" content="https://kreatimont.com/ru/apps/my-clients/privacy.html" />
-  <meta property="og:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta property="og:image" content="https://kreatimont.com/assets/images/apps/my-clients-og.jpg" />
   <meta property="og:locale" content="ru_RU" />
   <meta property="og:locale:alternate" content="en_US" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Политика конфиденциальности — My Clients" />
   <meta name="twitter:description" content="Политика конфиденциальности My Clients. Данные хранятся на вашем устройстве." />
-  <meta name="twitter:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/my-clients-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="author" content="Alexandr Nadtoka" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="My Clients" />
   <link rel="stylesheet" href="../../../assets/css/style.css" />
   <script type="application/ld+json">
   {
@@ -39,8 +49,9 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/ru/">Alexandr Nadtoka</a>
       <ul class="nav-links">
@@ -50,9 +61,10 @@
       </ul>
     </div>
   </nav>
+  <a id="main-content" tabindex="-1"></a>
 
   <div class="container">
-    <div class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/ru/">Главная</a>
       <span>/</span>
       <a href="/ru/#apps">Приложения</a>
@@ -60,11 +72,11 @@
       <a href="index.html">My Clients</a>
       <span>/</span>
       <span>Конфиденциальность</span>
-    </div>
+    </nav>
   </div>
 
   <div class="container" style="margin-top: 8px;">
-    <nav class="page-nav">
+    <nav class="page-nav" aria-label="App sections">
       <a href="index.html">Обзор</a>
       <a href="support.html">Поддержка</a>
       <a href="privacy.html" class="active">Конфиденциальность</a>
@@ -141,7 +153,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span>&copy; <script>document.write(new Date().getFullYear())</script> Alexandr Nadtoka. Все права защищены.</span>
+      <span>&copy; 2026 Alexandr Nadtoka. Все права защищены.</span>
       <div class="footer-links">
         <a href="support.html">Поддержка</a>
         <a href="privacy.html">Конфиденциальность</a>

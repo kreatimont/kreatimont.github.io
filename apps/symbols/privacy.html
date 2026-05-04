@@ -15,15 +15,25 @@
   <meta property="og:title" content="Privacy Policy — Symbols" />
   <meta property="og:description" content="Symbols Privacy Policy. The app works fully offline with no data collection." />
   <meta property="og:url" content="https://kreatimont.com/apps/symbols/privacy.html" />
-  <meta property="og:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta property="og:image" content="https://kreatimont.com/assets/images/apps/symbols-og.jpg" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ru_RU" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Privacy Policy — Symbols" />
   <meta name="twitter:description" content="Symbols Privacy Policy. The app works fully offline with no data collection." />
-  <meta name="twitter:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/symbols-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="author" content="Alexandr Nadtoka" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Symbols" />
   <link rel="stylesheet" href="../../assets/css/style.css" />
   <script type="application/ld+json">
   {
@@ -39,8 +49,9 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/">Alexandr Nadtoka</a>
       <ul class="nav-links">
@@ -50,9 +61,10 @@
       </ul>
     </div>
   </nav>
+  <a id="main-content" tabindex="-1"></a>
 
   <div class="container">
-    <div class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
       <a href="/#apps">Apps</a>
@@ -60,11 +72,11 @@
       <a href="index.html">Symbols</a>
       <span>/</span>
       <span>Privacy Policy</span>
-    </div>
+    </nav>
   </div>
 
   <div class="container" style="margin-top: 8px;">
-    <nav class="page-nav">
+    <nav class="page-nav" aria-label="App sections">
       <a href="index.html">Overview</a>
       <a href="support.html">Support</a>
       <a href="privacy.html" class="active">Privacy Policy</a>
@@ -139,7 +151,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span>&copy; <script>document.write(new Date().getFullYear())</script> Alexandr Nadtoka. All rights reserved.</span>
+      <span>&copy; 2026 Alexandr Nadtoka. All rights reserved.</span>
       <div class="footer-links">
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy Policy</a>

@@ -1,0 +1,17 @@
+{
+  "name": "Alexandr Nadtoka — iOS Developer",
+  "short_name": "Kreatimont",
+  "description": "Indie iOS developer building native Swift apps for learning and exploration.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007AFF",
+  "lang": "en",
+  "icons": [
+    { "src": "/assets/images/favicon-16.png", "sizes": "16x16", "type": "image/png" },
+    { "src": "/assets/images/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/assets/images/favicon.png", "sizes": "120x120", "type": "image/png" },
+    { "src": "/assets/images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

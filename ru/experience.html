@@ -24,6 +24,16 @@
   <meta name="twitter:description" content="Опыт работы Александра Надтоки, мобильного разработчика с 2017 года." />
   <meta name="twitter:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+  <meta name="author" content="Alexandr Nadtoka" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Kreatimont" />
   <link rel="stylesheet" href="../assets/css/style.css" />
   <script type="application/ld+json">
   {
@@ -48,9 +58,10 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- Nav -->
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/ru/">Alexandr Nadtoka</a>
       <ul class="nav-links">
@@ -61,6 +72,7 @@
       </ul>
     </div>
   </nav>
+  <a id="main-content" tabindex="-1"></a>
 
   <!-- Header -->
   <section class="hero" style="padding-bottom: 48px;">
@@ -115,20 +127,20 @@
                 Разработка и полная поддержка нативных e-commerce приложений для iOS и Android.
               </p>
               <div class="job-links">
-                <a href="https://apps.apple.com/app/id1471177349" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.82rem; padding:8px 16px;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <a href="https://apps.apple.com/app/id1471177349" target="_blank" rel="noopener" class="btn btn-secondary btn-xs">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><use href="/assets/images/sprite.svg#appstore"/></svg>
                   Crowley Marine iOS
                 </a>
-                <a href="https://apps.apple.com/app/id1616112783" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.82rem; padding:8px 16px;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <a href="https://apps.apple.com/app/id1616112783" target="_blank" rel="noopener" class="btn btn-secondary btn-xs">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><use href="/assets/images/sprite.svg#appstore"/></svg>
                   Crowley Cycles iOS
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.crowleymarine" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.82rem; padding:8px 16px;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l2.258-2.246L3.005.74a1.478 1.478 0 0 0-.756-.204L13.544 10.99zM3.005 23.26l12.192-6.498-2.349-2.33L3.005 23.26z"/></svg>
+                <a href="https://play.google.com/store/apps/details?id=com.crowleymarine" target="_blank" rel="noopener" class="btn btn-secondary btn-xs">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><use href="/assets/images/sprite.svg#googleplay"/></svg>
                   Crowley Marine Android
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.crowleycycles" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.82rem; padding:8px 16px;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l2.258-2.246L3.005.74a1.478 1.478 0 0 0-.756-.204L13.544 10.99zM3.005 23.26l12.192-6.498-2.349-2.33L3.005 23.26z"/></svg>
+                <a href="https://play.google.com/store/apps/details?id=com.crowleycycles" target="_blank" rel="noopener" class="btn btn-secondary btn-xs">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><use href="/assets/images/sprite.svg#googleplay"/></svg>
                   Crowley Cycles Android
                 </a>
               </div>
@@ -170,8 +182,8 @@
                 <span class="tag">CI/CD</span>
               </div>
               <div class="job-links">
-                <a href="https://apps.apple.com/app/id875855935" target="_blank" rel="noopener" class="btn btn-secondary" style="font-size:0.82rem; padding:8px 16px;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <a href="https://apps.apple.com/app/id875855935" target="_blank" rel="noopener" class="btn btn-secondary btn-xs">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><use href="/assets/images/sprite.svg#appstore"/></svg>
                   WorldRemit iOS App
                 </a>
               </div>
@@ -248,7 +260,7 @@
   <!-- Footer -->
   <footer>
     <div class="footer-inner">
-      <span>&copy; <script>document.write(new Date().getFullYear())</script> Alexandr Nadtoka. Все права защищены.</span>
+      <span>&copy; 2026 Alexandr Nadtoka. Все права защищены.</span>
       <div class="footer-links">
         <a href="/ru/#apps">Приложения</a>
         <a href="/ru/experience.html">Опыт</a>

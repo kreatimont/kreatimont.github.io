@@ -58,7 +58,7 @@ section { padding: 80px 0; }
 section + section { border-top: 1px solid var(--border); }
 
 /* ─── Nav ──────────────────────────────────────────────────────── */
-nav {
+body > nav {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -69,7 +69,7 @@ nav {
 }
 
 @media (prefers-color-scheme: dark) {
-  nav { background: rgba(0,0,0,0.85); }
+  body > nav { background: rgba(0,0,0,0.85); }
 }
 
 .nav-inner {
@@ -166,6 +166,11 @@ nav {
   transform: translateY(-1px);
   box-shadow: var(--shadow);
 }
+
+/* Button sizes */
+.btn-sm { font-size: 0.85rem;  padding: 9px 18px; }
+.btn-xs { font-size: 0.82rem;  padding: 8px 16px; }
+.btn-md { font-size: 0.875rem; padding: 10px 20px; }
 
 .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
 
@@ -850,9 +855,95 @@ footer {
   .job-header { flex-direction: column; }
 }
 
+/* ─── App detail screenshots ───────────────────────────────────── */
+.screenshots-row {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.screenshot {
+  width: 220px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+  background: var(--bg-alt);
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.screenshot:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 48px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 580px) {
+  .screenshots-row {
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 16px;
+  }
+  .screenshot {
+    width: 180px;
+    flex-shrink: 0;
+  }
+}
+
 /* ─── Utilities ────────────────────────────────────────────────── */
 .text-secondary { color: var(--text-secondary); }
 .mt-8  { margin-top:  8px; }
 .mt-16 { margin-top: 16px; }
 .mt-24 { margin-top: 24px; }
 .mt-40 { margin-top: 40px; }
+
+/* ─── Accessibility ───────────────────────────────────────────── */
+
+/* Skip-to-content link, visible only when focused */
+.skip-link {
+  position: absolute;
+  top: -56px;
+  left: 16px;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 200;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 12px;
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+/* Keyboard focus ring (modern browsers only — leaves mouse clicks alone) */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.btn:focus-visible,
+.social-link:focus-visible,
+.tag:focus-visible {
+  outline-offset: 4px;
+}
+
+/* Honor users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
