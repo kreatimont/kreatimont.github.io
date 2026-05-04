@@ -5,6 +5,7 @@
   <!-- ─── Homepage ─── -->
   <url>
     <loc>https://kreatimont.com/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kreatimont.com/" />
@@ -12,6 +13,7 @@
   </url>
   <url>
     <loc>https://kreatimont.com/ru/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kreatimont.com/" />
@@ -21,6 +23,7 @@
   <!-- ─── Experience ─── -->
   <url>
     <loc>https://kreatimont.com/experience.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/experience.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/experience.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kreatimont.com/experience.html" />
@@ -28,6 +31,7 @@
   </url>
   <url>
     <loc>https://kreatimont.com/ru/experience.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/experience.html" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/experience.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kreatimont.com/experience.html" />
@@ -37,188 +41,226 @@
   <!-- ─── Mapora ─── -->
   <url>
     <loc>https://kreatimont.com/apps/mapora/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/mapora/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/mapora/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/mapora/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/mapora/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/mapora/" />
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/mapora/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/mapora/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/mapora/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/mapora/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.2</priority>
   </url>
 
   <!-- ─── Teso ─── -->
   <url>
     <loc>https://kreatimont.com/apps/teso/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/teso/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/teso/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/teso/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/teso/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/teso/" />
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/teso/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/teso/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/teso/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/teso/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.2</priority>
   </url>
 
   <!-- ─── Cosmos Pic ─── -->
   <url>
     <loc>https://kreatimont.com/apps/cosmos-pic/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/cosmos-pic/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/cosmos-pic/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/cosmos-pic/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/cosmos-pic/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/cosmos-pic/" />
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/cosmos-pic/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/cosmos-pic/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/cosmos-pic/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/cosmos-pic/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.2</priority>
   </url>
 
   <!-- ─── My Clients ─── -->
   <url>
     <loc>https://kreatimont.com/apps/my-clients/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/my-clients/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/my-clients/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/my-clients/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/my-clients/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/my-clients/" />
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/my-clients/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/my-clients/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/my-clients/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/my-clients/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/my-clients/terms.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/my-clients/terms.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.2</priority>
   </url>
 
   <!-- ─── City Transport ─── -->
   <url>
     <loc>https://kreatimont.com/apps/city-transport/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/city-transport/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/city-transport/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/city-transport/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/city-transport/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/city-transport/" />
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/city-transport/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/city-transport/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/city-transport/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/city-transport/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.2</priority>
   </url>
 
   <!-- ─── Symbols ─── -->
   <url>
     <loc>https://kreatimont.com/apps/symbols/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/symbols/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/symbols/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/symbols/</loc>
+    <lastmod>2026-05-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/symbols/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/symbols/" />
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/symbols/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/symbols/support.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/symbols/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/symbols/privacy.html</loc>
+    <lastmod>2026-05-04</lastmod>
     <priority>0.2</priority>
   </url>
 

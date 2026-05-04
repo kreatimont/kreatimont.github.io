@@ -1,7 +1,5 @@
 # Claude Code
-.claude/settings.local.json
-.claude/todos/
-.claude/memory/
+.claude/
 
 # macOS
 .DS_Store
