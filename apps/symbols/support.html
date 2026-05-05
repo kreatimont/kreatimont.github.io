@@ -103,6 +103,7 @@
     ]
   }
   </script>
+  <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -110,10 +111,16 @@
   <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/">Alexandr Nadtoka</a>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
         <li><a href="/#apps">Apps</a></li>
         <li><a href="/#about">About</a></li>
         <li><a href="/#contact">Contact</a></li>
+        <li><a href="/ru/apps/symbols/support.html" class="lang-toggle">RU</a></li>
       </ul>
     </div>
   </nav>
@@ -218,12 +225,6 @@
   <footer>
     <div class="footer-inner">
       <span>&copy; 2026 Alexandr Nadtoka. All rights reserved.</span>
-      <div class="footer-links">
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="/">Home</a>
-        <a href="/ru/apps/symbols/support.html" class="lang-toggle">RU</a>
-      </div>
     </div>
   </footer>
 

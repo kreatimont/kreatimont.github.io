@@ -103,6 +103,7 @@
     ]
   }
   </script>
+  <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -110,10 +111,16 @@
   <nav aria-label="Primary">
     <div class="nav-inner">
       <a class="nav-brand" href="/ru/">Alexandr Nadtoka</a>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
         <li><a href="/ru/#apps">Приложения</a></li>
         <li><a href="/ru/#about">Обо мне</a></li>
         <li><a href="/ru/#contact">Контакты</a></li>
+        <li><a href="/apps/mapora/support.html" class="lang-toggle">EN</a></li>
       </ul>
     </div>
   </nav>
@@ -218,12 +225,6 @@
   <footer>
     <div class="footer-inner">
       <span>&copy; 2026 Alexandr Nadtoka. Все права защищены.</span>
-      <div class="footer-links">
-        <a href="support.html">Поддержка</a>
-        <a href="privacy.html">Конфиденциальность</a>
-        <a href="/ru/">Главная</a>
-        <a href="/apps/mapora/support.html" class="lang-toggle">EN</a>
-      </div>
     </div>
   </footer>
 
