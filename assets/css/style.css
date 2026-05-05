@@ -505,63 +505,106 @@ footer {
   margin-bottom: 20px;
 }
 
-.app-badges { display: flex; gap: 12px; flex-wrap: wrap; }
-
-.appstore-badge {
-  display: inline-block;
-  height: 40px;
-}
-
-.appstore-badge img {
-  height: 40px;
-  width: auto;
-}
-
-/* ─── Store download buttons ───────────────────────────────────── */
-.store-btn {
-  display: inline-flex;
+/* ─── App store badges (official Apple / Google branded) ──────── */
+.app-badges {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
-  padding: 0 18px;
-  height: 44px;
-  background: #000;
-  color: #fff;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: opacity 0.2s, transform 0.2s;
-  flex-shrink: 0;
 }
 
-.store-btn:hover {
-  opacity: 0.82;
+.app-badges a {
+  display: inline-block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.app-badges a:hover {
   transform: translateY(-1px);
+  opacity: 0.92;
   text-decoration: none;
 }
 
-.store-btn-icon {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-  fill: #fff;
+.app-badges img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
-.store-btn-text {
+@media (max-width: 480px) {
+  .app-badges img { height: 42px; }
+}
+
+/* ─── App stats bar ────────────────────────────────────────────── */
+.app-stats {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.app-stats-row {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-stat {
   display: flex;
   flex-direction: column;
-  line-height: 1.15;
+  align-items: center;
+  padding: 28px 44px;
+  position: relative;
 }
 
-.store-btn-text small {
-  font-size: 0.65rem;
-  font-weight: 400;
-  opacity: 0.85;
-  letter-spacing: 0.01em;
+.app-stat + .app-stat::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 24px;
+  width: 1px;
+  background: var(--border);
 }
 
-.store-btn-text strong {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+.app-stat-value {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.app-stat-label {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  text-align: center;
+  max-width: 120px;
+}
+
+@media (max-width: 580px) {
+  .app-stat { padding: 18px 24px; }
+  .app-stat + .app-stat::before { display: none; }
+}
+
+/* ─── Tech stack pills ─────────────────────────────────────────── */
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 980px;
+  font-size: 0.875rem;
+  color: var(--text);
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 @media (max-width: 580px) {

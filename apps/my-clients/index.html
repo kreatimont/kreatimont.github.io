@@ -35,472 +35,6 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="My Clients" />
   <link rel="stylesheet" href="../../assets/css/style.css" />
-  <style>
-    /* ────────────────────────────────────────
-       Rich App Page — My Clients
-    ──────────────────────────────────────── */
-
-    /* ── Hero Banner ── */
-    .mc-hero {
-      background: #060f1f;
-      padding: 72px 0 64px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .mc-hero-glow {
-      position: absolute;
-      top: -120px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 700px;
-      height: 700px;
-      background: radial-gradient(circle at 50% 40%,
-        rgba(67, 150, 230, 0.45) 0%,
-        rgba(50, 114, 239, 0.25) 35%,
-        rgba(16, 10, 40, 0) 70%);
-      pointer-events: none;
-    }
-
-    .mc-hero-glow-2 {
-      position: absolute;
-      bottom: -80px;
-      right: -80px;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle,
-        rgba(59, 130, 246, 0.18) 0%,
-        transparent 70%);
-      pointer-events: none;
-    }
-
-    .mc-hero-inner {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .mc-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: rgba(73, 141, 244, 0.18);
-      border: 1px solid rgba(73, 141, 244, 0.35);
-      color: #bfdbfe;
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 5px 14px;
-      border-radius: 980px;
-      margin-bottom: 28px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
-    .mc-badge-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #498DF4;
-    }
-
-    .mc-hero-icon {
-      width: 110px;
-      height: 110px;
-      border-radius: 24px;
-      box-shadow:
-        0 0 0 1px rgba(255,255,255,0.08),
-        0 8px 32px rgba(67, 150, 230, 0.45),
-        0 24px 60px rgba(0,0,0,0.5);
-      margin-bottom: 32px;
-      display: block;
-    }
-
-    .mc-hero-title {
-      font-size: clamp(2.2rem, 5.5vw, 3.6rem);
-      font-weight: 700;
-      color: #ffffff;
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-      margin: 0 0 18px;
-      max-width: 620px;
-    }
-
-    .mc-hero-title em {
-      font-style: normal;
-      background: linear-gradient(135deg, #93c5fd 0%, #498DF4 60%, #3272EF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .mc-hero-sub {
-      color: rgba(255,255,255,0.55);
-      font-size: 1.05rem;
-      line-height: 1.65;
-      max-width: 480px;
-      margin: 0 0 40px;
-    }
-
-    .mc-hero-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-
-    .mc-store-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 13px 22px;
-      border-radius: 14px;
-      text-decoration: none;
-      font-family: var(--font);
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
-    }
-
-    .mc-store-btn--ios {
-      background: #ffffff;
-      color: #000000;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.35);
-    }
-
-    .mc-store-btn--android {
-      background: rgba(255,255,255,0.08);
-      color: #ffffff;
-      border: 1px solid rgba(255,255,255,0.18);
-      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-    }
-
-    .mc-store-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 36px rgba(0,0,0,0.4);
-    }
-
-    .mc-store-btn svg {
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-    }
-
-    .mc-store-btn-label {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      line-height: 1.2;
-    }
-
-    .mc-store-btn-label small {
-      font-size: 0.67rem;
-      opacity: 0.7;
-      font-weight: 400;
-    }
-
-    .mc-store-btn-label strong {
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
-
-    .mc-hero-note {
-      color: rgba(255,255,255,0.28);
-      font-size: 0.78rem;
-    }
-
-    /* ── Stats Bar ── */
-    .mc-stats-bar {
-      background: var(--bg-alt);
-      border-bottom: 1px solid var(--border);
-      padding: 0;
-    }
-
-    .mc-stats-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .mc-stat {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 28px 44px;
-      position: relative;
-    }
-
-    .mc-stat + .mc-stat::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 24px;
-      bottom: 24px;
-      width: 1px;
-      background: var(--border);
-    }
-
-    .mc-stat-value {
-      font-size: 1.9rem;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1;
-    }
-
-    .mc-stat-stars {
-      display: flex;
-      gap: 3px;
-      font-size: 1.1rem;
-      line-height: 1;
-      margin-bottom: 2px;
-    }
-
-    .mc-stat-label {
-      font-size: 0.78rem;
-      color: var(--text-secondary);
-      margin-top: 6px;
-      text-align: center;
-      max-width: 100px;
-    }
-
-    /* ── Features Section ── */
-    .mc-features {
-      padding: 90px 0;
-    }
-
-    .mc-features-header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .mc-section-eyebrow {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #498DF4;
-      margin-bottom: 12px;
-    }
-
-    .mc-section-title {
-      font-size: clamp(1.7rem, 3.5vw, 2.4rem);
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.15;
-      margin: 0 0 14px;
-      letter-spacing: -0.015em;
-    }
-
-    .mc-section-sub {
-      color: var(--text-secondary);
-      font-size: 1rem;
-      line-height: 1.6;
-      max-width: 480px;
-      margin: 0 auto;
-    }
-
-    .mc-feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 18px;
-    }
-
-    .mc-feature-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px 24px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-
-    .mc-feature-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(73, 141, 244, 0.12);
-      border-color: rgba(67, 150, 230, 0.25);
-    }
-
-    .mc-feature-icon-wrap {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(73, 141, 244, 0.12), rgba(50, 114, 239, 0.08));
-      border: 1px solid rgba(73, 141, 244, 0.18);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      margin-bottom: 16px;
-    }
-
-    .mc-feature-title {
-      font-size: 0.98rem;
-      font-weight: 600;
-      color: var(--text);
-      margin: 0 0 8px;
-    }
-
-    .mc-feature-desc {
-      font-size: 0.875rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-      margin: 0;
-    }
-
-    /* ── Screenshots Section ── */
-    .mc-screenshots {
-      padding: 90px 0;
-      background: var(--bg-alt);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      overflow: hidden;
-    }
-
-    .mc-screenshots-header {
-      text-align: center;
-      margin-bottom: 56px;
-    }
-
-    .mc-phones-row {
-      display: flex;
-      gap: 24px;
-      justify-content: center;
-      align-items: flex-end;
-      flex-wrap: wrap;
-    }
-
-    /* Phone frame */
-    .mc-phone {
-      width: 200px;
-      height: 420px;
-      border-radius: 16px;
-      box-shadow:
-        0 0 0 1px rgba(255,255,255,0.06),
-        0 32px 72px rgba(0,0,0,0.22),
-        0 8px 24px rgba(0,0,0,0.15);
-      overflow: hidden;
-      position: relative;
-      background: #1c1c1e;
-      flex-shrink: 0;
-      transition: transform 0.3s ease;
-    }
-
-    .mc-phone:hover {
-      transform: translateY(-6px);
-    }
-
-    .mc-phone--center {
-      transform: translateY(-16px) scale(1.04);
-      box-shadow:
-        0 0 0 1px rgba(255,255,255,0.08),
-        0 40px 88px rgba(124, 58, 237, 0.28),
-        0 16px 40px rgba(0,0,0,0.25);
-    }
-
-    .mc-phone--center:hover {
-      transform: translateY(-22px) scale(1.04);
-    }
-
-    @media (prefers-color-scheme: light) {
-      .mc-phone {
-        border-color: #1a1a2e;
-      }
-    }
-
-    .mc-phone img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* ── Privacy Callout ── */
-    .mc-privacy-callout {
-      display: flex;
-      align-items: flex-start;
-      gap: 22px;
-      background: linear-gradient(135deg, rgba(73,141,244,0.06), rgba(50,114,239,0.04));
-      border: 1px solid rgba(124,58,237,0.15);
-      border-radius: 20px;
-      padding: 36px 40px;
-    }
-
-    .mc-privacy-icon {
-      font-size: 2.2rem;
-      flex-shrink: 0;
-      line-height: 1;
-    }
-
-    .mc-privacy-text h3 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--text);
-      margin: 0 0 8px;
-    }
-
-    .mc-privacy-text p {
-      font-size: 0.9rem;
-      color: var(--text-secondary);
-      line-height: 1.65;
-      margin: 0 0 16px;
-    }
-
-    /* ── CTA Section ── */
-    .mc-cta {
-      padding: 90px 0;
-      text-align: center;
-    }
-
-    .mc-cta-title {
-      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
-      font-weight: 700;
-      color: var(--text);
-      letter-spacing: -0.02em;
-      margin: 0 0 14px;
-    }
-
-    .mc-cta-sub {
-      color: var(--text-secondary);
-      font-size: 1rem;
-      margin: 0 0 36px;
-    }
-
-    .mc-cta-btns {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    /* ── Responsive ── */
-    @media (max-width: 640px) {
-      .mc-hero { padding: 56px 0 48px; }
-
-      .mc-stat { padding: 20px 24px; }
-      .mc-stat + .mc-stat::before { display: none; }
-      .mc-stats-row { gap: 0; }
-
-      .mc-phone { width: 160px; height: 320px; }
-      .mc-phone--center { transform: translateY(-10px) scale(1.03); }
-      .mc-phones-row { gap: 12px; }
-
-      .mc-privacy-callout {
-        flex-direction: column;
-        padding: 24px;
-      }
-
-      .mc-feature-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .mc-feature-grid { grid-template-columns: 1fr; }
-      .mc-phones-row { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 16px; justify-content: flex-start; }
-      .mc-phone--center { transform: none; box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 32px 72px rgba(0,0,0,0.22); }
-    }
-  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -558,7 +92,7 @@
   <a id="main-content" tabindex="-1"></a>
 
   <!-- Breadcrumb -->
-  <div class="container" style="padding-top: 20px;">
+  <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
@@ -568,104 +102,43 @@
     </nav>
   </div>
 
-  <!-- ── Hero Banner ── -->
-  <div class="mc-hero">
-    <div class="mc-hero-glow"></div>
-    <div class="mc-hero-glow-2"></div>
+  <!-- App Hero -->
+  <div class="app-hero">
     <div class="container">
-      <div class="mc-hero-inner">
-
-        <div class="mc-badge">
-          <span class="mc-badge-dot"></span>
-          Business &amp; Productivity
+      <div class="app-hero-inner">
+        <div class="app-hero-icon">
+          <img src="/assets/images/apps/my-clients.webp" alt="My Clients icon" width="256" height="256" decoding="async" />
         </div>
-
-        <img class="mc-hero-icon"
-          src="/assets/images/apps/my-clients.webp"
-          alt="My Clients app icon" width="256" height="256" decoding="async" />
-
-        <h1 class="mc-hero-title">
-          Your clients,<br>
-          <em>beautifully organized.</em>
-        </h1>
-
-        <p class="mc-hero-sub">
-          Track records, schedule appointments, and understand your business growth — all in one simple app built for independent professionals.
-        </p>
-
-        <div class="mc-hero-actions">
-          <!-- App Store -->
-          <a class="mc-store-btn mc-store-btn--ios"
-             href="https://apps.apple.com/app/id1526018188"
-             target="_blank" rel="noopener"
-             aria-label="Download on the App Store">
-            <svg viewBox="0 0 24 24" fill="currentColor"><use href="/assets/images/sprite.svg#appstore"/></svg>
-            <div class="mc-store-btn-label">
-              <small>Download on the</small>
-              <strong>App Store</strong>
-            </div>
-          </a>
-
-          <!-- Google Play -->
-          <a class="mc-store-btn mc-store-btn--android"
-             href="https://play.google.com/store/apps/details?id=io.kreatimont.android.clients"
-             target="_blank" rel="noopener"
-             aria-label="Get it on Google Play">
-            <svg viewBox="0 0 24 24" fill="currentColor"><use href="/assets/images/sprite.svg#googleplay-alt"/></svg>
-            <div class="mc-store-btn-label">
-              <small>Get it on</small>
-              <strong>Google Play</strong>
-            </div>
-          </a>
-
-          <!-- Website -->
-          <a class="mc-store-btn mc-store-btn--android"
-             href="https://www.myclients.work"
-             target="_blank" rel="noopener"
-             aria-label="Visit My Clients website">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="/assets/images/sprite.svg#globe"/></svg>
-            <div class="mc-store-btn-label">
-              <small>Visit</small>
-              <strong>myclients.work</strong>
-            </div>
-          </a>
+        <div class="app-hero-meta">
+          <h1>My Clients</h1>
+          <p class="app-hero-subtitle">Organizer and assistant for managing client records and appointments.</p>
+          <div class="app-badges">
+            <a href="https://apps.apple.com/app/id1526018188" target="_blank" rel="noopener">
+              <img src="/assets/images/badges/app-store-en.svg" alt="Download on the App Store" height="48" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=io.kreatimont.android.clients" target="_blank" rel="noopener">
+              <img src="/assets/images/badges/google-play-en.svg" alt="Get it on Google Play" height="48" />
+            </a>
+          </div>
         </div>
-
-        <p class="mc-hero-note">Free · iOS &amp; Android · No account required</p>
-
       </div>
     </div>
   </div>
 
-  <!-- ── Stats Bar ── -->
-  <div class="mc-stats-bar">
-    <div class="container">
-      <div class="mc-stats-row">
-
-        <div class="mc-stat">
-          <div class="mc-stat-value">25K</div>
-          <div class="mc-stat-label">Active users per month</div>
-        </div>
-
-        <div class="mc-stat">
-          <div class="mc-stat-stars">★★★★★</div>
-          <div class="mc-stat-value" style="font-size:1.6rem;">4.8</div>
-          <div class="mc-stat-label">App Store rating</div>
-        </div>
-
-        <div class="mc-stat">
-          <div class="mc-stat-value" style="display:flex;align-items:center;gap:6px;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:#498DF4;flex-shrink:0;"><use href="/assets/images/sprite.svg#appstore"/></svg>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:#3DDC84;flex-shrink:0;"><use href="/assets/images/sprite.svg#googleplay-alt"/></svg>
-          </div>
-          <div class="mc-stat-label">iOS &amp; Android</div>
-        </div>
-
-        <div class="mc-stat">
-          <div class="mc-stat-value">15</div>
-          <div class="mc-stat-label">Languages supported</div>
-        </div>
-
+  <!-- Stats -->
+  <div class="app-stats">
+    <div class="app-stats-row">
+      <div class="app-stat">
+        <div class="app-stat-value">25K</div>
+        <div class="app-stat-label">Active users per month</div>
+      </div>
+      <div class="app-stat">
+        <div class="app-stat-value">4.8★</div>
+        <div class="app-stat-label">App Store rating</div>
+      </div>
+      <div class="app-stat">
+        <div class="app-stat-value">15</div>
+        <div class="app-stat-label">Languages</div>
       </div>
     </div>
   </div>
@@ -680,126 +153,86 @@
     </nav>
   </div>
 
-  <!-- ── Features ── -->
-  <section class="mc-features" style="border-top: none; padding-top: 72px;">
+  <!-- Features -->
+  <section style="border-top: none; padding-top: 0;">
     <div class="container">
-      <div class="mc-features-header">
-        <p class="mc-section-eyebrow">Features</p>
-        <h2 class="mc-section-title">Everything you need,<br>nothing you don't.</h2>
-        <p class="mc-section-sub">My Clients is built for independent professionals who want a clean, fast way to manage their work — no complexity, no monthly fees.</p>
-      </div>
+      <p class="section-label">Features</p>
+      <h2 class="section-title">Everything you need, nothing you don&rsquo;t.</h2>
+      <p class="section-subtitle">My Clients is built for independent professionals who want a clean, fast way to manage their work — no complexity, no monthly fees.</p>
 
-      <div class="mc-feature-grid">
-        <div class="mc-feature-card">
-          <div class="mc-feature-icon-wrap">👤</div>
-          <p class="mc-feature-title">Client Records</p>
-          <p class="mc-feature-desc">Store names, contact details, notes, and service history for every client. Everything in one place, always at your fingertips.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">👤</div>
+          <p class="feature-title">Client Records</p>
+          <p class="feature-desc">Store names, contact details, notes, and service history for every client. Everything in one place, always at your fingertips.</p>
         </div>
-        <div class="mc-feature-card">
-          <div class="mc-feature-icon-wrap">🔔</div>
-          <p class="mc-feature-title">Appointment Reminders</p>
-          <p class="mc-feature-desc">Schedule upcoming sessions and get timely notifications. Never miss an appointment or forget to follow up.</p>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <p class="feature-title">Appointment Reminders</p>
+          <p class="feature-desc">Schedule upcoming sessions and get timely notifications. Never miss an appointment or forget to follow up.</p>
         </div>
-        <div class="mc-feature-card">
-          <div class="mc-feature-icon-wrap">📊</div>
-          <p class="mc-feature-title">Monthly Statistics</p>
-          <p class="mc-feature-desc">See how your business is growing month over month — clients served, appointment trends, and more at a glance.</p>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <p class="feature-title">Monthly Statistics</p>
+          <p class="feature-desc">See how your business is growing month over month — clients served, appointment trends, and more at a glance.</p>
         </div>
-        <div class="mc-feature-card">
-          <div class="mc-feature-icon-wrap">🌍</div>
-          <p class="mc-feature-title">15 Languages</p>
-          <p class="mc-feature-desc">Available in 15 languages including English, Russian, Ukrainian, Spanish, French, German and more. Work in your language.</p>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <p class="feature-title">15 Languages</p>
+          <p class="feature-desc">Available in 15 languages including English, Russian, Ukrainian, Spanish, French, German and more. Work in your language.</p>
         </div>
-        <div class="mc-feature-card">
-          <div class="mc-feature-icon-wrap">🔒</div>
-          <p class="mc-feature-title">Fully Offline</p>
-          <p class="mc-feature-desc">All your data lives on your device. No account needed, no internet required, no cloud sync — your clients stay private.</p>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <p class="feature-title">Fully Offline</p>
+          <p class="feature-desc">All your data lives on your device. No account needed, no internet required, no cloud sync — your clients stay private.</p>
         </div>
-        <div class="mc-feature-card">
-          <div class="mc-feature-icon-wrap">⚡️</div>
-          <p class="mc-feature-title">Fast &amp; Lightweight</p>
-          <p class="mc-feature-desc">Designed to be instant. Open the app and find what you need in seconds. No bloat, no loading screens.</p>
+        <div class="feature-card">
+          <div class="feature-icon">⚡️</div>
+          <p class="feature-title">Fast &amp; Lightweight</p>
+          <p class="feature-desc">Designed to be instant. Open the app and find what you need in seconds. No bloat, no loading screens.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Screenshots ── -->
-  <div class="mc-screenshots">
-    <div class="container">
-      <div class="mc-screenshots-header">
-        <p class="mc-section-eyebrow">Screenshots</p>
-        <h2 class="mc-section-title">Designed with care.</h2>
-        <p class="mc-section-sub" style="margin:0 auto;">A clean, native interface that feels right at home on your iPhone or Android device.</p>
-      </div>
-
-      <div class="mc-phones-row">
-
-        <!-- Screenshot 1 -->
-        <div class="mc-phone">
-          <img src="/assets/images/apps/my-clients-screen-1.webp"
-            alt="My Clients – stats screenshot" width="540" height="1171" loading="lazy" decoding="async" />
-        </div>
-
-        <!-- Screenshot 2 (center, elevated) -->
-        <div class="mc-phone mc-phone--center">
-          <img src="/assets/images/apps/my-clients-screen-2.webp"
-            alt="My Clients – appointments screenshot" width="540" height="1171" loading="lazy" decoding="async" />
-        </div>
-
-        <!-- Screenshot 3 -->
-        <div class="mc-phone">
-          <img src="/assets/images/apps/my-clients-screen-3.webp"
-            alt="My Clients – notification screenshot" width="540" height="1171" loading="lazy" decoding="async" />
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Privacy ── -->
+  <!-- Screenshots -->
   <section>
     <div class="container">
-      <div class="mc-privacy-callout">
-        <div class="mc-privacy-icon">🔒</div>
-        <div class="mc-privacy-text">
-          <h3>Your data never leaves your phone.</h3>
-          <p>My Clients stores all records locally on your device. No cloud sync, no accounts, no third-party sharing — ever. Your client information is yours alone.</p>
-          <a href="privacy.html" class="btn btn-secondary">Read Privacy Policy</a>
-        </div>
+      <p class="section-label">Screenshots</p>
+      <h2 class="section-title">Take a look</h2>
+      <p class="section-subtitle">A clean, native interface that feels right at home on your iPhone or Android device.</p>
+      <div class="screenshots-row">
+        <img src="/assets/images/apps/my-clients-screen-1.webp" alt="My Clients — main client list view" width="540" height="1175" loading="lazy" decoding="async" class="screenshot" />
+        <img src="/assets/images/apps/my-clients-screen-2.webp" alt="My Clients — appointments calendar" width="540" height="1175" loading="lazy" decoding="async" class="screenshot" />
+        <img src="/assets/images/apps/my-clients-screen-3.webp" alt="My Clients — monthly statistics" width="540" height="1175" loading="lazy" decoding="async" class="screenshot" />
       </div>
     </div>
   </section>
 
-  <!-- ── CTA ── -->
-  <section class="mc-cta">
+  <!-- Tech Stack -->
+  <section>
     <div class="container">
-      <p class="mc-section-eyebrow">Get Started</p>
-      <h2 class="mc-cta-title">Join 25,000 professionals<br>who trust My Clients.</h2>
-      <p class="mc-cta-sub">Free to download. Works offline.</p>
-      <div class="mc-cta-btns">
-        <a class="store-btn" href="https://apps.apple.com/app/id1526018188" target="_blank" rel="noopener" aria-label="Download on the App Store">
-          <svg class="store-btn-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><use href="/assets/images/sprite.svg#appstore"/></svg>
-          <span class="store-btn-text">
-            <small>Download on the</small>
-            <strong>App Store</strong>
-          </span>
-        </a>
-        <a class="store-btn" href="https://play.google.com/store/apps/details?id=io.kreatimont.android.clients" target="_blank" rel="noopener" aria-label="Get it on Google Play">
-          <svg class="store-btn-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><use href="/assets/images/sprite.svg#googleplay-alt"/></svg>
-          <span class="store-btn-text">
-            <small>Get it on</small>
-            <strong>Google Play</strong>
-          </span>
-        </a>
-        <a class="store-btn" href="https://www.myclients.work" target="_blank" rel="noopener" aria-label="Visit My Clients website">
-          <svg class="store-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg"><use href="/assets/images/sprite.svg#globe"/></svg>
-          <span class="store-btn-text">
-            <small>Visit</small>
-            <strong>myclients.work</strong>
-          </span>
-        </a>
+      <p class="section-label">Stack</p>
+      <h2 class="section-title">Built with</h2>
+      <div class="tech-list">
+        <span class="tech-pill">Swift</span>
+        <span class="tech-pill">UIKit</span>
+        <span class="tech-pill">SnapKit</span>
+        <span class="tech-pill">Core Data</span>
+        <span class="tech-pill">Kotlin</span>
+        <span class="tech-pill">Jetpack Compose</span>
+        <span class="tech-pill">Room</span>
       </div>
+    </div>
+  </section>
+
+  <!-- Privacy callout -->
+  <section>
+    <div class="container">
+      <p class="section-label">Privacy</p>
+      <h2 class="section-title">Your data never leaves your phone.</h2>
+      <p class="section-subtitle" style="margin-bottom: 24px;">My Clients stores all records locally on your device. No cloud sync, no accounts, no third-party sharing — ever.</p>
+      <a href="privacy.html" class="btn btn-secondary">Read Privacy Policy</a>
     </div>
   </section>
 
@@ -812,3 +245,4 @@
 
 </body>
 </html>
+
