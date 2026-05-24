@@ -16,11 +16,15 @@
   <meta property="og:description" content="Mobile developer building native iOS and Android apps with a focus on great UI/UX — Mapora, Teso, City Transport, Cosmos Pic, Symbols, My Clients." />
   <meta property="og:url" content="https://kreatimont.com/" />
   <meta property="og:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Alexandr Nadtoka — iOS & Android Developer" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ru_RU" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://kreatimont.com/assets/images/og-image.jpg" />
+  <meta name="twitter:image:alt" content="Alexandr Nadtoka — iOS & Android Developer" />
   <meta name="twitter:title" content="Alexandr Nadtoka — iOS &amp; Android Developer" />
   <meta name="twitter:description" content="Mobile developer building native iOS and Android apps with a focus on great UI/UX — Mapora, Teso, City Transport, Cosmos Pic, Symbols, My Clients." />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
@@ -34,6 +38,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Kreatimont" />
+  <link rel="preload" href="/assets/images/sprite.svg" as="image" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script type="application/ld+json">
   {
@@ -66,6 +71,19 @@
         "description": "Mobile developer building native iOS and Android apps with a focus on great UI/UX — Mapora, Teso, City Transport, Cosmos Pic, Symbols, My Clients.",
         "publisher": { "@id": "https://kreatimont.com/#person" },
         "inLanguage": ["en", "ru"]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Apps",
+        "numberOfItems": 6,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "url": "https://kreatimont.com/apps/my-clients/" },
+          { "@type": "ListItem", "position": 2, "url": "https://kreatimont.com/apps/city-transport/" },
+          { "@type": "ListItem", "position": 3, "url": "https://kreatimont.com/apps/mapora/" },
+          { "@type": "ListItem", "position": 4, "url": "https://kreatimont.com/apps/teso/" },
+          { "@type": "ListItem", "position": 5, "url": "https://kreatimont.com/apps/cosmos-pic/" },
+          { "@type": "ListItem", "position": 6, "url": "https://kreatimont.com/apps/symbols/" }
+        ]
       }
     ]
   }
@@ -180,7 +198,7 @@
         <!-- Teso: Couples -->
         <div class="app-card">
           <div class="app-card-icon">
-            <img src="/assets/images/apps/teso.webp" alt="Teso icon" width="256" height="256" decoding="async" />
+            <img src="/assets/images/apps/teso.webp" alt="Teso icon" width="256" height="256" decoding="async" loading="lazy" />
           </div>
           <div>
             <p class="app-card-name">Teso: Couples</p>
@@ -199,7 +217,7 @@
         <!-- Cosmos Pic -->
         <div class="app-card">
           <div class="app-card-icon">
-            <img src="/assets/images/apps/cosmos-pic.webp" alt="Cosmos Pic icon" width="256" height="256" decoding="async" />
+            <img src="/assets/images/apps/cosmos-pic.webp" alt="Cosmos Pic icon" width="256" height="256" decoding="async" loading="lazy" />
           </div>
           <div>
             <p class="app-card-name">Cosmos Pic</p>
@@ -218,7 +236,7 @@
         <!-- Symbols -->
         <div class="app-card">
           <div class="app-card-icon">
-            <img src="/assets/images/apps/symbols.webp" alt="Symbols icon" width="256" height="256" decoding="async" />
+            <img src="/assets/images/apps/symbols.webp" alt="Symbols icon" width="256" height="256" decoding="async" loading="lazy" />
           </div>
           <div>
             <p class="app-card-name">Symbols — All Characters</p>
