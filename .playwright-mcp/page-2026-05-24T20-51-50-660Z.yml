@@ -1,0 +1,167 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Primary" [ref=e3]:
+    - generic [ref=e4]:
+      - link "Alexandr Nadtoka" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Apps" [ref=e8] [cursor=pointer]:
+            - /url: "#apps"
+        - listitem [ref=e9]:
+          - link "About" [ref=e10] [cursor=pointer]:
+            - /url: "#about"
+        - listitem [ref=e11]:
+          - link "Experience" [ref=e12] [cursor=pointer]:
+            - /url: /experience.html
+        - listitem [ref=e13]:
+          - link "Contact" [ref=e14] [cursor=pointer]:
+            - /url: "#contact"
+        - listitem [ref=e15]:
+          - link "RU" [ref=e16] [cursor=pointer]:
+            - /url: /ru/
+  - generic [ref=e18]:
+    - paragraph [ref=e19]: iOS & Android Developer
+    - heading "Building apps people love to use." [level=1] [ref=e20]:
+      - text: Building apps people
+      - text: love to use.
+    - paragraph [ref=e21]: Hi, I'm Alexandr Nadtoka — a mobile developer building native apps for iOS and Android with a passion for great UI/UX.
+    - generic [ref=e22]:
+      - link "View My Apps" [ref=e23] [cursor=pointer]:
+        - /url: "#apps"
+      - link "Get in Touch" [ref=e24] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e26]:
+    - paragraph [ref=e27]: Apps
+    - heading "My Apps" [level=2] [ref=e28]
+    - paragraph [ref=e29]: Native mobile apps designed for real people.
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - img "My Clients icon" [ref=e33]
+        - generic [ref=e34]:
+          - paragraph [ref=e35]: My Clients
+          - paragraph [ref=e36]: Organizer and assistant for managing client records and appointments.
+        - generic [ref=e37]:
+          - generic [ref=e38]: Business
+          - generic [ref=e39]: Free
+          - generic [ref=e40]: iOS & Android
+        - link "View App" [ref=e42] [cursor=pointer]:
+          - /url: apps/my-clients/
+      - generic [ref=e43]:
+        - img "City Transport icon" [ref=e45]
+        - generic [ref=e46]:
+          - paragraph [ref=e47]: City Transport
+          - paragraph [ref=e48]: Real-time GPS tracking for public transit across 28+ Ukrainian cities.
+        - generic [ref=e49]:
+          - generic [ref=e50]: Navigation
+          - generic [ref=e51]: Free
+        - generic [ref=e52]:
+          - link "View App" [ref=e53] [cursor=pointer]:
+            - /url: apps/city-transport/
+          - link "App Store" [ref=e54] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/id1445904986
+      - generic [ref=e55]:
+        - img "Mapora icon" [ref=e57]
+        - generic [ref=e58]:
+          - paragraph [ref=e59]: Mapora
+          - paragraph [ref=e60]: Play and learn geography through flags, maps, and street panoramas.
+        - generic [ref=e61]:
+          - generic [ref=e62]: Education
+          - generic [ref=e63]: Free
+        - generic [ref=e64]:
+          - link "View App" [ref=e65] [cursor=pointer]:
+            - /url: apps/mapora/
+          - link "App Store" [ref=e66] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/mapora/id6746750763
+      - generic [ref=e67]:
+        - img "Teso icon" [ref=e69]
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: "Teso: Couples"
+          - paragraph [ref=e72]: Daily shared prompts and reflections to help couples feel closer, one moment at a time.
+        - generic [ref=e73]:
+          - generic [ref=e74]: Lifestyle
+          - generic [ref=e75]: Free
+        - generic [ref=e76]:
+          - link "View App" [ref=e77] [cursor=pointer]:
+            - /url: apps/teso/
+          - link "App Store" [ref=e78] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/id6758556545
+      - generic [ref=e79]:
+        - img "Cosmos Pic icon" [ref=e81]
+        - generic [ref=e82]:
+          - paragraph [ref=e83]: Cosmos Pic
+          - paragraph [ref=e84]: Explore NASA's astronomy photos by date — discover what the universe looked like on any day since 1995.
+        - generic [ref=e85]:
+          - generic [ref=e86]: Entertainment
+          - generic [ref=e87]: Free
+        - generic [ref=e88]:
+          - link "View App" [ref=e89] [cursor=pointer]:
+            - /url: apps/cosmos-pic/
+          - link "App Store" [ref=e90] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/id1541492945
+      - generic [ref=e91]:
+        - img "Symbols icon" [ref=e93]
+        - generic [ref=e94]:
+          - paragraph [ref=e95]: Symbols — All Characters
+          - paragraph [ref=e96]: Every Unicode character in one place. Find, copy, and save any symbol with HTML and Unicode info.
+        - generic [ref=e97]:
+          - generic [ref=e98]: Utilities
+          - generic [ref=e99]: Free
+        - generic [ref=e100]:
+          - link "View App" [ref=e101] [cursor=pointer]:
+            - /url: apps/symbols/
+          - link "App Store" [ref=e102] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/id1487709911
+  - generic [ref=e104]:
+    - paragraph [ref=e105]: About
+    - heading "About Me" [level=2] [ref=e106]
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - paragraph [ref=e109]: I build native apps for iOS and Android with a strong focus on UI/UX. Every detail matters — from smooth animations to intuitive navigation — because great software should feel effortless.
+        - paragraph [ref=e110]: My apps cover education, productivity, and creative tools. I enjoy blending playful interactivity with real utility, making complex things feel simple.
+        - paragraph [ref=e111]: When I'm not coding, I'm exploring new places, which is probably why geography keeps showing up in my apps.
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - generic [ref=e114]: iOS
+          - generic [ref=e115]: Swift & SwiftUI
+        - generic [ref=e116]:
+          - generic [ref=e117]: Android
+          - generic [ref=e118]: Kotlin & Compose
+        - generic [ref=e119]:
+          - generic [ref=e120]: UI/UX
+          - generic [ref=e121]: Design-First Approach
+        - generic [ref=e122]:
+          - generic [ref=e123]: 10+
+          - generic [ref=e124]: Apps Built
+  - generic [ref=e126]:
+    - paragraph [ref=e127]: Contact
+    - heading "Find Me Online" [level=2] [ref=e128]
+    - paragraph [ref=e129]: I'm always happy to connect — reach out on any of these platforms.
+    - generic [ref=e130]:
+      - link "App Store" [ref=e131] [cursor=pointer]:
+        - /url: https://apps.apple.com/developer/id1445904985
+        - img [ref=e132]
+        - text: App Store
+      - link "Telegram" [ref=e134] [cursor=pointer]:
+        - /url: https://t.me/kreatimont
+        - img [ref=e135]
+        - text: Telegram
+      - link "GitHub" [ref=e137] [cursor=pointer]:
+        - /url: https://github.com/kreatimont
+        - img [ref=e138]
+        - text: GitHub
+      - link "LinkedIn" [ref=e140] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/alexandr-nadtoka-172746115/
+        - img [ref=e141]
+        - text: LinkedIn
+      - link "Instagram" [ref=e143] [cursor=pointer]:
+        - /url: https://instagram.com/kreatimont
+        - img [ref=e144]
+        - text: Instagram
+      - link "Email" [ref=e146] [cursor=pointer]:
+        - /url: mailto:nadtoka.alexandr@gmail.com
+        - img [ref=e147]
+        - text: Email
+  - contentinfo [ref=e149]:
+    - generic [ref=e151]: © 2026 Alexandr Nadtoka. All rights reserved.
