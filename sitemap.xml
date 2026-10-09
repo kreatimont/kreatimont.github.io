@@ -264,4 +264,11 @@
     <priority>0.2</priority>
   </url>
 
+  <!-- ─── Oggi Sciopero ─── -->
+  <url>
+    <loc>https://kreatimont.com/apps/sciopero/privacy.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
