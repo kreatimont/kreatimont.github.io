@@ -266,6 +266,16 @@
 
   <!-- ─── Oggi Sciopero ─── -->
   <url>
+    <loc>https://kreatimont.com/apps/sciopero/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kreatimont.com/apps/sciopero/support.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://kreatimont.com/apps/sciopero/privacy.html</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.3</priority>
