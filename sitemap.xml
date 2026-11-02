@@ -271,4 +271,21 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- ─── Drevo ─── -->
+  <url>
+    <loc>https://kreatimont.com/apps/drevo/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kreatimont.com/apps/drevo/support.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://kreatimont.com/apps/drevo/privacy.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
