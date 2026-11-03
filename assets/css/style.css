@@ -147,6 +147,10 @@ body > nav {
 @media (max-width: 768px) {
   .nav-toggle { display: block; }
 
+  /* backdrop-filter makes the nav the containing block of the fixed menu,
+     so the off-screen menu would otherwise widen the page. */
+  body > nav { overflow-x: clip; }
+
   .nav-links {
     position: fixed;
     inset: 0;
