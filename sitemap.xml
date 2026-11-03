@@ -77,37 +77,18 @@
   <!-- ─── Teso ─── -->
   <url>
     <loc>https://kreatimont.com/apps/teso/</loc>
-    <lastmod>2026-05-24</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/teso/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/teso/" />
+    <lastmod>2026-11-03</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kreatimont.com/ru/apps/teso/</loc>
-    <lastmod>2026-05-24</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/teso/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/teso/" />
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://kreatimont.com/apps/teso/support.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://kreatimont.com/ru/apps/teso/support.html</loc>
-    <lastmod>2026-05-24</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://kreatimont.com/apps/teso/privacy.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://kreatimont.com/ru/apps/teso/privacy.html</loc>
-    <lastmod>2026-05-24</lastmod>
-    <priority>0.2</priority>
   </url>
 
   <!-- ─── Cosmos Pic ─── -->
