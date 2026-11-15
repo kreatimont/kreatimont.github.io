@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Cosmos Pic</title>
-  <meta name="description" content="Cosmos Pic Privacy Policy. No personal data collected." />
+  <meta name="description" content="Cosmos Pic Privacy Policy: no account, anonymous analytics and crash reports through Firebase." />
   <link rel="canonical" href="https://kreatimont.com/apps/cosmos-pic/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/cosmos-pic/privacy.html" />
   <link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/cosmos-pic/privacy.html" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Alexandr Nadtoka" />
   <meta property="og:title" content="Privacy Policy — Cosmos Pic" />
-  <meta property="og:description" content="Cosmos Pic Privacy Policy. No personal data collected." />
+  <meta property="og:description" content="Cosmos Pic Privacy Policy: no account, anonymous analytics and crash reports through Firebase." />
   <meta property="og:url" content="https://kreatimont.com/apps/cosmos-pic/privacy.html" />
   <meta property="og:image" content="https://kreatimont.com/assets/images/apps/cosmos-pic-og.jpg" />
   <meta property="og:locale" content="en_US" />
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Privacy Policy — Cosmos Pic" />
-  <meta name="twitter:description" content="Cosmos Pic Privacy Policy. No personal data collected." />
+  <meta name="twitter:description" content="Cosmos Pic Privacy Policy: no account, anonymous analytics and crash reports through Firebase." />
   <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/cosmos-pic-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
@@ -47,6 +47,36 @@
     ]
   }
   </script>
+  <style>
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .legal-content th,
+    .legal-content td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border, #e5e5e5);
+    }
+    .legal-content th {
+      font-weight: 600;
+      background: var(--bg-secondary, #f9f9f9);
+    }
+    @media (prefers-color-scheme: dark) {
+      .legal-content th {
+        background: var(--bg-secondary, #2a2a2a);
+      }
+    }
+    @media (max-width: 600px) {
+      .legal-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  </style>
   <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
@@ -94,57 +124,64 @@
     <div class="container">
       <h1 class="section-title">Privacy Policy</h1>
       <p class="text-secondary" style="margin-bottom: 8px;">Applies to: <strong>Cosmos Pic</strong></p>
-      <div class="legal-meta">Last updated: March 2025</div>
+      <div class="legal-meta">Last updated: November 15, 2026</div>
 
       <div class="legal-content">
 
-        <h2>Overview</h2>
-        <p>
-          Cosmos Pic ("the App") is developed and maintained by Alexandr Nadtoka ("I", "me", "my").
-          This Privacy Policy explains how the App handles your information.
-        </p>
-        <p>
-          <strong>Cosmos Pic does not collect, store, or transmit any personal data.</strong>
-          No account, sign-in, or personal information is required to use the App.
-        </p>
+        <p>Cosmos Pic ("the App") is developed and maintained by Alexandr Nadtoka ("I", "me", "my"). The App shows NASA's Astronomy Picture of the Day for any date. This policy explains what data the App uses and the services it relies on.</p>
 
-        <h2>Data the App Accesses</h2>
-        <p>The App fetches publicly available image and text data from NASA's Astronomy Picture of the Day (APOD) API. This is a read-only public API — no personal data is sent to NASA as part of this request beyond what any standard HTTPS request includes (e.g. your IP address, handled by NASA's infrastructure according to <a href="https://www.nasa.gov/privacy/" target="_blank" rel="noopener">NASA's Privacy Policy</a>).</p>
-
-        <h2>Information We Do Not Collect</h2>
+        <h2>1. The Short Version</h2>
         <ul>
-          <li>Personal identifiable information</li>
-          <li>Account or sign-in data</li>
-          <li>Location data</li>
-          <li>Analytics or behavioral tracking data</li>
-          <li>Device identifiers</li>
+          <li>No account or sign-in, and I don't ask for your name or email address.</li>
+          <li>The App does not access your location, contacts or photo library, except to save a photo when you ask it to.</li>
+          <li>The App uses Firebase for anonymous usage analytics and crash reports, and includes the Google Mobile Ads SDK, as described in Section 3.</li>
+          <li>The App does not ask for permission to track you and does not use the advertising identifier.</li>
         </ul>
 
-        <h2>Saved Images</h2>
-        <p>
-          If you choose to save an image to your photo library, this action is performed locally on your device using iOS's standard photo-saving functionality. The App does not upload or store saved images anywhere.
-        </p>
+        <h2>2. NASA Photos</h2>
+        <p>The App loads public images and descriptions from NASA's Astronomy Picture of the Day (APOD) API. These requests include the date you pick and standard technical information such as your IP address, handled by NASA according to the <a href="https://www.nasa.gov/privacy/" target="_blank" rel="noopener">NASA Privacy Policy</a>.</p>
 
-        <h2>Data Security</h2>
-        <p>
-          Since no personal data is collected or transmitted, there is no personal data at risk.
-          All network requests are made over HTTPS.
-        </p>
+        <h2>3. Third-Party Services</h2>
+        <table>
+          <tr>
+            <th>Provider</th>
+            <th>Purpose</th>
+            <th>Data involved</th>
+          </tr>
+          <tr>
+            <td><strong>Google Firebase</strong> (Analytics, Crashlytics)</td>
+            <td>Understanding how the App is used and fixing crashes</td>
+            <td>A random app instance ID, app usage such as sessions and screens viewed, crash logs, device model, OS and app version, and approximate location derived from IP address. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Google Mobile Ads SDK</strong></td>
+            <td>Advertising support</td>
+            <td>When the App starts, the SDK may send device and app information, such as device model, OS version and IP address, to Google. The App does not request tracking permission, so the advertising identifier is not available to it. See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Apple Inc.</strong></td>
+            <td>App distribution and optional crash reports</td>
+            <td>If you share analytics with app developers in your device settings, Apple may provide anonymized crash and diagnostic reports. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</td>
+          </tr>
+        </table>
+        <p>This data is not linked to your name or email address. I do <strong>not</strong> sell your personal information.</p>
 
-        <h2>Children's Privacy</h2>
-        <p>
-          Cosmos Pic does not collect personal data from any user, including children.
-          The App is suitable for all ages.
-        </p>
+        <h2>4. Saved Photos</h2>
+        <p>If you save a photo, the App adds it to your photo library on your device. The App does not read your library or upload anything from it.</p>
 
-        <h2>Changes to This Policy</h2>
-        <p>
-          This Privacy Policy may be updated from time to time. Changes will be posted on this page with a revised date.
-          Continued use of the App constitutes acceptance of the updated policy.
-        </p>
+        <h2>5. Contacting Support</h2>
+        <p>If you email me, I receive your email address and whatever you include in your message. I use it only to respond to you.</p>
 
-        <h2>Contact</h2>
-        <p>If you have any questions, please contact me:</p>
+        <h2>6. Children's Privacy</h2>
+        <p>The App is suitable for all ages and does not knowingly collect personal information from children. If you believe a child has provided personal data, please contact me.</p>
+
+        <h2>7. Your Rights</h2>
+        <p>Depending on where you live, you may have the right to access, correct or delete your personal data and to object to its processing. Contact me at the address below. Google may process data in the United States under the safeguards described in its policies.</p>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>This policy may be updated from time to time. Changes will be posted on this page with a revised date.</p>
+
+        <h2>9. Contact</h2>
         <p><strong>Email:</strong> <a href="mailto:nadtoka.alexandr@gmail.com">nadtoka.alexandr@gmail.com</a></p>
 
       </div>

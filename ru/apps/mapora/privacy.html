@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Политика конфиденциальности — Mapora</title>
-  <meta name="description" content="Политика конфиденциальности Mapora. Персональные данные не собираются." />
+  <meta name="description" content="Политика конфиденциальности Mapora: что остаётся на устройстве и что приложение передаёт Firebase и RevenueCat." />
   <link rel="canonical" href="https://kreatimont.com/ru/apps/mapora/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/mapora/privacy.html" />
   <link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/mapora/privacy.html" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Alexandr Nadtoka" />
   <meta property="og:title" content="Политика конфиденциальности — Mapora" />
-  <meta property="og:description" content="Политика конфиденциальности Mapora. Персональные данные не собираются." />
+  <meta property="og:description" content="Политика конфиденциальности Mapora: что остаётся на устройстве и что приложение передаёт Firebase и RevenueCat." />
   <meta property="og:url" content="https://kreatimont.com/ru/apps/mapora/privacy.html" />
   <meta property="og:image" content="https://kreatimont.com/assets/images/apps/mapora-og.jpg" />
   <meta property="og:locale" content="ru_RU" />
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Политика конфиденциальности — Mapora" />
-  <meta name="twitter:description" content="Политика конфиденциальности Mapora. Персональные данные не собираются." />
+  <meta name="twitter:description" content="Политика конфиденциальности Mapora: что остаётся на устройстве и что приложение передаёт Firebase и RevenueCat." />
   <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/mapora-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
@@ -47,6 +47,36 @@
     ]
   }
   </script>
+  <style>
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .legal-content th,
+    .legal-content td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border, #e5e5e5);
+    }
+    .legal-content th {
+      font-weight: 600;
+      background: var(--bg-secondary, #f9f9f9);
+    }
+    @media (prefers-color-scheme: dark) {
+      .legal-content th {
+        background: var(--bg-secondary, #2a2a2a);
+      }
+    }
+    @media (max-width: 600px) {
+      .legal-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  </style>
   <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
@@ -94,36 +124,91 @@
     <div class="container">
       <h1 class="section-title">Политика конфиденциальности</h1>
       <p class="text-secondary" style="margin-bottom: 8px;">Применяется к: <strong>Mapora</strong></p>
-      <div class="legal-meta">Дата вступления в силу: 4 июня 2025 г.</div>
+      <div class="legal-meta">Дата вступления в силу: 15 ноября 2026 г. &nbsp;&middot;&nbsp; Разработчик: Alexandr Nadtoka</div>
 
       <div class="legal-content">
 
-        <p>Ваша конфиденциальность важна для нас. Настоящая Политика конфиденциальности описывает, как приложение Mapora («мы», «наш» или «нас») обрабатывает вашу информацию.</p>
+        <p>Mapora («Приложение») — карта путешествий и игры по географии. У Приложения нет аккаунтов и собственного сервера. Эта политика объясняет, какие данные остаются на вашем устройстве, что Приложение передаёт сервисам, которые оно использует, и какой у вас есть выбор.</p>
 
-        <h2>1. Отсутствие сбора данных</h2>
-        <p>Mapora <strong>не собирает</strong>, <strong>не хранит</strong>, <strong>не отслеживает</strong> и <strong>не передаёт</strong> никаких персональных данных или информации об использовании.</p>
+        <h2>1. Коротко</h2>
         <ul>
-          <li>Мы не собираем ваше имя, email, геолокацию или другие персональные идентификаторы.</li>
-          <li>Мы не используем куки и аналитические инструменты.</li>
-          <li>Мы не интегрируем сторонние сервисы отслеживания или рекламы.</li>
+          <li>Аккаунт не нужен, мы не спрашиваем ваше имя или e-mail.</li>
+          <li>Ваши страны, города, список желаний, прогресс в играх и карты хранятся на вашем устройстве. Мы их не видим.</li>
+          <li>Импорт из фото полностью работает на iPhone. Фото и их геометки никуда не загружаются.</li>
+          <li>Приложение использует Firebase для анонимной аналитики, отчётов о сбоях и удалённых настроек, а RevenueCat — для управления подписками (см. раздел 4). События аналитики содержат только числа и простые значения, но никогда не названия стран и городов, где вы были.</li>
+          <li>В Приложении нет рекламы, и оно не отслеживает вас в других приложениях и на сайтах.</li>
         </ul>
 
-        <h2>2. Офлайн и локальная работа</h2>
-        <p>Mapora работает преимущественно на вашем устройстве. Функции викторины по флагам и атласа работают без доступа к интернету и без передачи данных пользователя.</p>
+        <h2>2. Данные на устройстве</h2>
+        <ul>
+          <li><strong>Ваши поездки:</strong> посещённые страны, города, регионы и штаты США, годы поездок и список желаний.</li>
+          <li><strong>Игры:</strong> очки, серии, XP, медали и достижения.</li>
+          <li><strong>Карты</strong>, которые вы создали или отсканировали у друзей.</li>
+          <li><strong>Настройки</strong> и сохранённый статус Pro.</li>
+        </ul>
+        <p>У нас нет доступа к этим данным. Они могут попасть в резервные копии iCloud или компьютера в зависимости от настроек устройства.</p>
 
-        <h2>3. Функция «Панорамы»</h2>
-        <p>Функция «Найди локацию по панораме» использует <strong>Apple MapKit Look Around</strong> для отображения 360° панорамных видов. Панорамы транслируются напрямую от Apple и подпадают под действие <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Политики конфиденциальности Apple</a>.<br />
-        Mapora не получает доступа, не собирает и не хранит данные геолокации из этой функции.</p>
+        <h2>3. Разрешения</h2>
+        <ul>
+          <li><strong>Фото (по желанию):</strong> если вы разрешите доступ, Приложение читает место и дату съёмки фото, чтобы найти страны и города, где вы были. Это происходит на устройстве. Фото не загружаются, и на карту ничего не добавляется без вашего подтверждения.</li>
+          <li><strong>Геопозиция (по желанию):</strong> примерное местоположение используется на устройстве, чтобы предлагать медали и челленджи рядом и помогать отмечать, где вы находитесь. Нам оно не передаётся.</li>
+          <li><strong>Камера (по желанию):</strong> только для сканирования QR-кодов общих карт.</li>
+          <li><strong>Добавление в Фото (по желанию):</strong> только для сохранения QR-карточек общих карт.</li>
+        </ul>
+        <p><strong>Общие карты</strong> записываются прямо в QR-код и не загружаются на сервер. Любой, кто отсканирует код, увидит карту, которая в нём записана.</p>
 
-        <h2>4. Конфиденциальность детей</h2>
-        <p>Поскольку Mapora не собирает никаких данных, приложение безопасно для пользователей всех возрастов, включая детей до 13 лет.</p>
+        <h2>4. Сторонние сервисы</h2>
+        <table>
+          <tr>
+            <th>Сервис</th>
+            <th>Зачем</th>
+            <th>Какие данные</th>
+          </tr>
+          <tr>
+            <td><strong>Google Firebase</strong> (Analytics, Crashlytics, Remote Config)</td>
+            <td>Понимать, как используется Приложение, исправлять сбои и менять настройки, например лимиты и эксперименты, без обновления</td>
+            <td>Случайный идентификатор установки, события вроде «онбординг пройден» или «показан экран подписки» с числами и простыми значениями (например, сколько стран импортировано, но не какие), общие свойства пользователя, например статус Pro и примерное число стран, журналы сбоев, модель устройства, версии системы и Приложения, а также примерное местоположение по IP-адресу. См. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>RevenueCat, Inc.</strong></td>
+            <td>Управление подписками и проверка покупок</td>
+            <td>Случайный анонимный идентификатор, сведения о покупках и подписке, а также технические данные: версия Приложения, устройство и система, регион и IP-адрес. См. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">политику конфиденциальности RevenueCat</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Apple Inc.</strong></td>
+            <td>Оплата в App Store, карты и панорамы Look Around</td>
+            <td>Оплату обрабатывает Apple, мы не видим ваши платёжные данные. Карты и панорамы 360° в игре «Где я?» загружаются с серверов Apple. См. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">политику конфиденциальности Apple</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Wikimedia</strong> (Википедия, Викиданные, Викисклад)</td>
+            <td>Фото стран, гербы и описания</td>
+            <td>Обычные веб-запросы к изображениям и статьям, которые вы открываете, включая IP-адрес. См. <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">политику конфиденциальности Wikimedia</a>.</td>
+          </tr>
+        </table>
+        <p>Приложение не запрашивает разрешение на отслеживание и не использует рекламный идентификатор. Мы <strong>не</strong> продаём ваши данные и не используем их для рекламы.</p>
 
-        <h2>5. Изменения в политике</h2>
-        <p>Мы можем обновить эту Политику конфиденциальности в будущем. В этом случае мы уведомим пользователей, обновив политику в приложении и изменив дату вступления в силу.</p>
+        <h2>5. Обращение в поддержку</h2>
+        <p>Если вы пишете нам, мы получаем ваш e-mail и всё, что вы указали в письме. Мы используем это только для ответа вам.</p>
 
-        <h2>6. Контакты</h2>
-        <p>По вопросам, связанным с этой Политикой конфиденциальности, обращайтесь:</p>
-        <p><a href="mailto:nadtoka.alexandr@gmail.com">nadtoka.alexandr@gmail.com</a></p>
+        <h2>6. Хранение и удаление данных</h2>
+        <ul>
+          <li><strong>Данные на устройстве:</strong> удаляются вместе с Приложением. Копии в резервных копиях хранятся по вашим настройкам.</li>
+          <li><strong>Аналитика и отчёты о сбоях:</strong> хранятся в Firebase согласно его настройкам и политикам и не связаны с вашим именем или e-mail.</li>
+          <li><strong>Подписки:</strong> удаление Приложения не отменяет подписку. Отменить её можно в настройках аккаунта App Store.</li>
+        </ul>
+
+        <h2>7. Дети</h2>
+        <p>Приложение подходит для любого возраста и сознательно не собирает персональные данные детей. В нём нет аккаунтов, чатов и рекламы. Если вы считаете, что ребёнок передал нам персональные данные, свяжитесь с нами.</p>
+
+        <h2>8. Ваши права</h2>
+        <p>В зависимости от места проживания вы можете иметь право на доступ к своим данным, их исправление, удаление или получение копии, а также право возразить против их обработки. Для этого напишите нам по адресу ниже. Вы также можете подать жалобу в местный орган по защите данных. Firebase и RevenueCat могут обрабатывать данные в США с мерами защиты, описанными в их политиках.</p>
+
+        <h2>9. Изменения политики</h2>
+        <p>Мы можем обновлять эту политику и будем публиковать изменения на этой странице с новой датой вступления в силу.</p>
+
+        <h2>10. Контакты</h2>
+        <p><strong>Alexandr Nadtoka</strong><br />
+        E-mail: <a href="mailto:nadtoka.alexandr@gmail.com">nadtoka.alexandr@gmail.com</a></p>
 
       </div>
     </div>

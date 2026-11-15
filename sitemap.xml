@@ -5,7 +5,7 @@
   <!-- ─── Homepage ─── -->
   <url>
     <loc>https://kreatimont.com/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kreatimont.com/" />
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://kreatimont.com/ru/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kreatimont.com/" />
@@ -41,43 +41,43 @@
   <!-- ─── Mapora ─── -->
   <url>
     <loc>https://kreatimont.com/apps/mapora/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/mapora/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/mapora/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/mapora/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/mapora/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/mapora/" />
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/mapora/support.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/mapora/support.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/mapora/privacy.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/mapora/privacy.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.2</priority>
   </url>
 
   <!-- ─── Teso ─── -->
   <url>
     <loc>https://kreatimont.com/apps/teso/</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -94,36 +94,36 @@
   <!-- ─── Cosmos Pic ─── -->
   <url>
     <loc>https://kreatimont.com/apps/cosmos-pic/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/cosmos-pic/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/cosmos-pic/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/cosmos-pic/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/cosmos-pic/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/cosmos-pic/" />
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/cosmos-pic/support.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/cosmos-pic/support.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/apps/cosmos-pic/privacy.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/cosmos-pic/privacy.html</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <priority>0.2</priority>
   </url>
 
@@ -212,14 +212,14 @@
   <!-- ─── Symbols ─── -->
   <url>
     <loc>https://kreatimont.com/apps/symbols/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/symbols/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/symbols/" />
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kreatimont.com/ru/apps/symbols/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/symbols/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/symbols/" />
     <priority>0.6</priority>
@@ -269,4 +269,8 @@
     <priority>0.3</priority>
   </url>
 
+  <url>
+    <loc>https://kreatimont.com/links/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
 </urlset>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Политика конфиденциальности — Cosmos Pic</title>
-  <meta name="description" content="Политика конфиденциальности Cosmos Pic. Персональные данные не собираются." />
+  <meta name="description" content="Политика конфиденциальности Cosmos Pic: без аккаунта, анонимная аналитика и отчёты о сбоях через Firebase." />
   <link rel="canonical" href="https://kreatimont.com/ru/apps/cosmos-pic/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/cosmos-pic/privacy.html" />
   <link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/cosmos-pic/privacy.html" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Alexandr Nadtoka" />
   <meta property="og:title" content="Политика конфиденциальности — Cosmos Pic" />
-  <meta property="og:description" content="Политика конфиденциальности Cosmos Pic. Персональные данные не собираются." />
+  <meta property="og:description" content="Политика конфиденциальности Cosmos Pic: без аккаунта, анонимная аналитика и отчёты о сбоях через Firebase." />
   <meta property="og:url" content="https://kreatimont.com/ru/apps/cosmos-pic/privacy.html" />
   <meta property="og:image" content="https://kreatimont.com/assets/images/apps/cosmos-pic-og.jpg" />
   <meta property="og:locale" content="ru_RU" />
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Политика конфиденциальности — Cosmos Pic" />
-  <meta name="twitter:description" content="Политика конфиденциальности Cosmos Pic. Персональные данные не собираются." />
+  <meta name="twitter:description" content="Политика конфиденциальности Cosmos Pic: без аккаунта, анонимная аналитика и отчёты о сбоях через Firebase." />
   <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/cosmos-pic-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
@@ -47,6 +47,36 @@
     ]
   }
   </script>
+  <style>
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .legal-content th,
+    .legal-content td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border, #e5e5e5);
+    }
+    .legal-content th {
+      font-weight: 600;
+      background: var(--bg-secondary, #f9f9f9);
+    }
+    @media (prefers-color-scheme: dark) {
+      .legal-content th {
+        background: var(--bg-secondary, #2a2a2a);
+      }
+    }
+    @media (max-width: 600px) {
+      .legal-content table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  </style>
   <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
@@ -94,58 +124,65 @@
     <div class="container">
       <h1 class="section-title">Политика конфиденциальности</h1>
       <p class="text-secondary" style="margin-bottom: 8px;">Применяется к: <strong>Cosmos Pic</strong></p>
-      <div class="legal-meta">Последнее обновление: март 2025 г.</div>
+      <div class="legal-meta">Последнее обновление: 15 ноября 2026 г.</div>
 
       <div class="legal-content">
 
-        <h2>Обзор</h2>
-        <p>
-          Cosmos Pic («Приложение») разработано и поддерживается Александром Надтокой («я», «меня», «мой»).
-          Настоящая Политика конфиденциальности объясняет, как Приложение обрабатывает вашу информацию.
-        </p>
-        <p>
-          <strong>Cosmos Pic не собирает, не хранит и не передаёт никаких персональных данных.</strong>
-          Для использования Приложения не требуется аккаунт, вход или персональные данные.
-        </p>
+        <p>Cosmos Pic («Приложение») разработано и поддерживается Александром Надтокой («я», «меня», «мой»). Приложение показывает «Астрономическую картинку дня» NASA за любую дату. Эта политика объясняет, какие данные использует Приложение и какими сервисами оно пользуется.</p>
 
-        <h2>Данные, к которым обращается Приложение</h2>
-        <p>Приложение получает общедоступные изображения и текст из API NASA «Астрономическая картинка дня» (APOD). Это публичный API только для чтения — никакие персональные данные не отправляются в NASA в рамках этого запроса, кроме стандартных данных HTTPS-запроса (например, IP-адреса, обрабатываемого инфраструктурой NASA согласно <a href="https://www.nasa.gov/privacy/" target="_blank" rel="noopener">Политике конфиденциальности NASA</a>).</p>
-
-        <h2>Что мы не собираем</h2>
+        <h2>1. Коротко</h2>
         <ul>
-          <li>Персональные идентификационные данные</li>
-          <li>Данные аккаунта или входа</li>
-          <li>Данные о геолокации</li>
-          <li>Аналитику или данные отслеживания поведения</li>
-          <li>Идентификаторы устройства</li>
+          <li>Не нужен аккаунт или вход, я не спрашиваю ваше имя или e-mail.</li>
+          <li>Приложение не получает доступ к геопозиции, контактам и галерее, кроме сохранения снимка по вашему запросу.</li>
+          <li>Приложение использует Firebase для анонимной аналитики и отчётов о сбоях и содержит Google Mobile Ads SDK (см. раздел 3).</li>
+          <li>Приложение не запрашивает разрешение на отслеживание и не использует рекламный идентификатор.</li>
         </ul>
 
-        <h2>Сохранённые снимки</h2>
-        <p>
-          Если вы сохраняете снимок в фотобиблиотеку, это действие выполняется локально на вашем устройстве с использованием стандартных функций iOS. Приложение не загружает и не хранит сохранённые снимки где-либо ещё.
-        </p>
+        <h2>2. Снимки NASA</h2>
+        <p>Приложение загружает общедоступные снимки и описания из API NASA «Астрономическая картинка дня» (APOD). Запросы содержат выбранную вами дату и стандартные технические данные, например IP-адрес, которые NASA обрабатывает согласно <a href="https://www.nasa.gov/privacy/" target="_blank" rel="noopener">Политике конфиденциальности NASA</a>.</p>
 
-        <h2>Безопасность данных</h2>
-        <p>
-          Поскольку персональные данные не собираются и не передаются, угрозы их утечки нет.
-          Все сетевые запросы осуществляются по протоколу HTTPS.
-        </p>
+        <h2>3. Сторонние сервисы</h2>
+        <table>
+          <tr>
+            <th>Сервис</th>
+            <th>Зачем</th>
+            <th>Какие данные</th>
+          </tr>
+          <tr>
+            <td><strong>Google Firebase</strong> (Analytics, Crashlytics)</td>
+            <td>Понимать, как используется Приложение, и исправлять сбои</td>
+            <td>Случайный идентификатор установки, данные об использовании, например сеансы и открытые экраны, журналы сбоев, модель устройства, версии системы и Приложения, а также примерное местоположение по IP-адресу. См. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Google Mobile Ads SDK</strong></td>
+            <td>Поддержка рекламы</td>
+            <td>При запуске Приложения SDK может отправлять в Google сведения об устройстве и Приложении, например модель устройства, версию системы и IP-адрес. Приложение не запрашивает разрешение на отслеживание, поэтому рекламный идентификатор ему недоступен. См. <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">как Google использует данные приложений</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Apple Inc.</strong></td>
+            <td>Распространение Приложения и отчёты о сбоях по желанию</td>
+            <td>Если в настройках устройства вы разрешили делиться аналитикой с разработчиками, Apple может передавать обезличенные отчёты о сбоях. См. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">политику конфиденциальности Apple</a>.</td>
+          </tr>
+        </table>
+        <p>Эти данные не связаны с вашим именем или e-mail. Я <strong>не</strong> продаю ваши данные.</p>
 
-        <h2>Конфиденциальность детей</h2>
-        <p>
-          Cosmos Pic не собирает персональных данных ни от одного пользователя, включая детей.
-          Приложение подходит для всех возрастов.
-        </p>
+        <h2>4. Сохранённые снимки</h2>
+        <p>Если вы сохраняете снимок, Приложение добавляет его в галерею на устройстве. Приложение не читает галерею и ничего из неё не загружает.</p>
 
-        <h2>Изменения в политике</h2>
-        <p>
-          Настоящая Политика конфиденциальности может обновляться. Изменения публикуются на этой странице с новой датой.
-          Продолжение использования Приложения означает принятие обновлённой политики.
-        </p>
+        <h2>5. Обращение в поддержку</h2>
+        <p>Если вы пишете мне, я получаю ваш e-mail и всё, что вы указали в письме. Я использую это только для ответа вам.</p>
 
-        <h2>Контакты</h2>
-        <p>По вопросам обращайтесь:</p>
-        <p><strong>Email:</strong> <a href="mailto:nadtoka.alexandr@gmail.com">nadtoka.alexandr@gmail.com</a></p>
+        <h2>6. Дети</h2>
+        <p>Приложение подходит для любого возраста и сознательно не собирает персональные данные детей. Если вы считаете, что ребёнок передал персональные данные, свяжитесь со мной.</p>
+
+        <h2>7. Ваши права</h2>
+        <p>В зависимости от места проживания вы можете иметь право на доступ к своим данным, их исправление или удаление и право возразить против их обработки. Напишите мне по адресу ниже. Google может обрабатывать данные в США с мерами защиты, описанными в его политиках.</p>
+
+        <h2>8. Изменения политики</h2>
+        <p>Политика может обновляться. Изменения публикуются на этой странице с новой датой.</p>
+
+        <h2>9. Контакты</h2>
+        <p><strong>E-mail:</strong> <a href="mailto:nadtoka.alexandr@gmail.com">nadtoka.alexandr@gmail.com</a></p>
 
       </div>
     </div>
