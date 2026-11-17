@@ -54,10 +54,18 @@
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "Is City Transport available on Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. City Transport is available on the App Store for iPhone and on Google Play for Android. The Android version currently covers Ukrainian cities."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Which cities are supported?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "City Transport covers 70+ cities across 15 European countries — including 40+ cities in Ukraine (Kyiv, Lviv, Kharkiv, Odesa, Dnipro) plus Rome, Warsaw, Berlin, Amsterdam, Prague and more. The full list is available within the App."
+          "text": "On iPhone, City Transport covers 70+ cities across 15 European countries, including 40+ cities in Ukraine (Kyiv, Lviv, Kharkiv, Odesa, Dnipro) plus Rome, Warsaw, Berlin, Amsterdam, Prague and more. On Android, it covers 44 Ukrainian cities and the Zakarpattia, Ivano-Frankivsk and Cherkasy oblasts. The full list is in the App. If your city is missing, email me."
         }
       },
       {
@@ -65,7 +73,7 @@
         "name": "The map isn't showing any vehicles. What should I check?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Make sure you have an active internet connection. Vehicle data requires a network request to fetch live positions. Try pulling to refresh or tapping the manual refresh button. If the issue persists, the transit data provider for that city may be temporarily unavailable."
+          "text": "Make sure you have an active internet connection and that at least one route is selected. Try the manual refresh button. If the issue persists, the city's transit data service may be temporarily unavailable. Let me know which city and route, and I'll take a look."
         }
       },
       {
@@ -73,7 +81,7 @@
         "name": "How often does vehicle data update?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can configure the update interval in Settings — choose from preset intervals or switch to manual refresh mode to update only when you tap the refresh button."
+          "text": "You can set the update interval in Settings, or switch to manual mode and refresh only when you tap the refresh button."
         }
       },
       {
@@ -81,7 +89,7 @@
         "name": "Do I need to allow location access?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Location access is entirely optional. If granted, the App uses it only to center the map on your current position. You can use all features without sharing your location."
+          "text": "No. Location access is optional. If you allow it, the App uses it only to show you on the map and center the map on you. All features work without it."
         }
       },
       {
@@ -89,15 +97,23 @@
         "name": "How do I remove ads?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can remove ads via the in-app purchase option in Settings. It is a one-time purchase with no subscription required."
+          "text": "On iPhone, subscribe to City Transport Pro in Settings. It removes ads and unlocks extra features. The Android version doesn't offer a way to remove ads yet."
         }
       },
       {
         "@type": "Question",
-        "name": "How do I restore my purchase?",
+        "name": "How do I restore or cancel my subscription on iPhone?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Go to Settings within the App and tap \"Restore Purchases\". Make sure you are signed in with the same Apple ID used for the original purchase."
+          "text": "To restore, open Settings in the App and tap \"Restore Purchases\", signed in with the same Apple ID you used to subscribe. To cancel, go to iPhone Settings → your name → Subscriptions → City Transport."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I change my ad privacy choices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the EEA, the UK and Switzerland, you can review your ad consent from the App's settings. On iPhone you can also turn tracking off in Settings → Privacy & Security → Tracking. On Android you can reset or delete your Advertising ID in your phone's Google or privacy settings. See the Privacy Policy for details."
         }
       },
       {
@@ -105,7 +121,7 @@
         "name": "How do I switch the interface theme?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Open Settings within the App and select your preferred theme — light, dark, or the default system theme that follows your iOS appearance settings."
+          "text": "Open Settings in the App and pick light, dark, or the system theme that follows your phone's appearance."
         }
       }
     ]
@@ -163,67 +179,75 @@
       <h2 class="section-title" style="font-size: 1.4rem; margin-bottom: 24px;">Frequently Asked Questions</h2>
 
       <div class="faq-list">
-
+        <details class="faq-item">
+          <summary>Is City Transport available on Android?</summary>
+          <p class="faq-body">
+            Yes. City Transport is available on the <a href="https://apps.apple.com/app/id1445904986" target="_blank" rel="noopener">App Store</a>
+            for iPhone and on <a href="https://play.google.com/store/apps/details?id=io.kreatimont.android.citytransport" target="_blank" rel="noopener">Google Play</a>
+            for Android. The Android version currently covers Ukrainian cities.
+          </p>
+        </details>
         <details class="faq-item">
           <summary>Which cities are supported?</summary>
           <p class="faq-body">
-            City Transport covers 70+ cities across 15 European countries — including 40+ cities in
-            Ukraine (Kyiv, Lviv, Kharkiv, Odesa, Dnipro) plus Rome, Warsaw, Berlin, Amsterdam, Prague
-            and more. The full list is available within the App.
+            On iPhone, City Transport covers 70+ cities across 15 European countries, including 40+ cities in
+            Ukraine (Kyiv, Lviv, Kharkiv, Odesa, Dnipro) plus Rome, Warsaw, Berlin, Amsterdam, Prague and more.
+            On Android, it covers 44 Ukrainian cities and the Zakarpattia, Ivano-Frankivsk and Cherkasy oblasts.
+            The full list is in the App. If your city is missing, email me.
           </p>
         </details>
-
         <details class="faq-item">
           <summary>The map isn't showing any vehicles. What should I check?</summary>
           <p class="faq-body">
-            Make sure you have an active internet connection. Vehicle data requires a network request
-            to fetch live positions. Try pulling to refresh or tapping the manual refresh button.
-            If the issue persists, the transit data provider for that city may be temporarily unavailable.
+            Make sure you have an active internet connection and that at least one route is selected.
+            Try the manual refresh button. If the issue persists, the city's transit data service may be
+            temporarily unavailable. Let me know which city and route, and I'll take a look.
           </p>
         </details>
-
         <details class="faq-item">
           <summary>How often does vehicle data update?</summary>
           <p class="faq-body">
-            You can configure the update interval in Settings — choose from preset intervals or
-            switch to manual refresh mode to update only when you tap the refresh button.
+            You can set the update interval in Settings, or switch to manual mode and refresh only when
+            you tap the refresh button.
           </p>
         </details>
-
         <details class="faq-item">
           <summary>Do I need to allow location access?</summary>
           <p class="faq-body">
-            No. Location access is entirely optional. If granted, the App uses it only to center the
-            map on your current position. You can use all features without sharing your location.
+            No. Location access is optional. If you allow it, the App uses it only to show you on the map
+            and center the map on you. All features work without it.
           </p>
         </details>
-
         <details class="faq-item">
           <summary>How do I remove ads?</summary>
           <p class="faq-body">
-            You can remove ads via the in-app purchase option in Settings. It is a one-time purchase
-            with no subscription required.
+            On iPhone, subscribe to City Transport Pro in Settings. It removes ads and unlocks extra features.
+            The Android version doesn't offer a way to remove ads yet.
           </p>
         </details>
-
         <details class="faq-item">
-          <summary>How do I restore my purchase?</summary>
+          <summary>How do I restore or cancel my subscription on iPhone?</summary>
           <p class="faq-body">
-            Go to Settings within the App and tap "Restore Purchases". Make sure you are signed in
-            with the same Apple ID used for the original purchase.
+            To restore, open Settings in the App and tap "Restore Purchases", signed in with the same Apple ID
+            you used to subscribe. To cancel, go to iPhone Settings &rarr; your name &rarr; Subscriptions &rarr; City Transport.
           </p>
         </details>
-
+        <details class="faq-item">
+          <summary>How do I change my ad privacy choices?</summary>
+          <p class="faq-body">
+            In the EEA, the UK and Switzerland, you can review your ad consent from the App's settings.
+            On iPhone you can also turn tracking off in Settings &rarr; Privacy &amp; Security &rarr; Tracking.
+            On Android you can reset or delete your Advertising ID in your phone's Google or privacy settings.
+            See the <a href="privacy.html">Privacy Policy</a> for details.
+          </p>
+        </details>
         <details class="faq-item">
           <summary>How do I switch the interface theme?</summary>
           <p class="faq-body">
-            Open Settings within the App and select your preferred theme — light, dark, or the default
-            system theme that follows your iOS appearance settings.
+            Open Settings in the App and pick light, dark, or the system theme that follows your phone's appearance.
           </p>
         </details>
-
       </div>
-
       <div class="contact-box">
         <div>
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent); flex-shrink: 0; margin-top: 2px;"><use href="/assets/images/sprite.svg#email-outline"/></svg>

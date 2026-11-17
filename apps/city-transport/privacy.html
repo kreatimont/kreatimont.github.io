@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — City Transport</title>
-  <meta name="description" content="City Transport Privacy Policy. Geolocation is optional and not stored." />
+  <meta name="description" content="City Transport Privacy Policy for iPhone and Android: location, ads, analytics and purchases." />
   <link rel="canonical" href="https://kreatimont.com/apps/city-transport/privacy.html" />
   <link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/city-transport/privacy.html" />
   <link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/city-transport/privacy.html" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Alexandr Nadtoka" />
   <meta property="og:title" content="Privacy Policy — City Transport" />
-  <meta property="og:description" content="City Transport Privacy Policy. Geolocation is optional and not stored." />
+  <meta property="og:description" content="City Transport Privacy Policy for iPhone and Android: location, ads, analytics and purchases." />
   <meta property="og:url" content="https://kreatimont.com/apps/city-transport/privacy.html" />
   <meta property="og:image" content="https://kreatimont.com/assets/images/apps/city-transport-og.jpg" />
   <meta property="og:locale" content="en_US" />
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Privacy Policy — City Transport" />
-  <meta name="twitter:description" content="City Transport Privacy Policy. Geolocation is optional and not stored." />
+  <meta name="twitter:description" content="City Transport Privacy Policy for iPhone and Android: location, ads, analytics and purchases." />
   <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/city-transport-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
@@ -93,77 +93,135 @@
   <section style="padding-top: 24px;">
     <div class="container">
       <h1 class="section-title">Privacy Policy</h1>
-      <p class="text-secondary" style="margin-bottom: 8px;">Applies to: <strong>City Transport: GPS Monitoring</strong></p>
-      <div class="legal-meta">Last updated: March 2025</div>
+      <p class="text-secondary" style="margin-bottom: 8px;">Applies to: <strong>City Transport</strong> for iPhone (App Store) and Android (Google Play)</p>
+      <div class="legal-meta">Last updated: November 17, 2026</div>
 
       <div class="legal-content">
-
         <h2>Overview</h2>
         <p>
           City Transport ("the App") is developed and maintained by Alexandr Nadtoka ("I", "me", "my").
-          This Privacy Policy describes what data the App accesses and how it is handled.
+          The App shows public transport vehicles live on a map. This Privacy Policy describes what data
+          the iOS and Android versions of the App use and how it is handled. Where the two versions differ,
+          this is noted below.
+        </p>
+        <p>
+          In short: the App has no accounts and never asks for your name or email. It shows ads and uses
+          Google Firebase for anonymous usage statistics and crash reports. Your favorites and settings stay on your device.
         </p>
 
         <h2>Location Data</h2>
         <p>
-          The App can optionally use your device's location to center the map on your current position.
-          This is entirely optional — the App functions fully without location access.
+          With your permission, the App uses your device's location to show you on the map and center the map on you.
+          Location access is optional: the App works fully without it.
         </p>
         <ul>
-          <li>Location data is used only in real time to center the map view.</li>
-          <li>Location data is <strong>never stored</strong> on the device beyond the current session.</li>
-          <li>Location data is <strong>never transmitted</strong> to any server controlled by me.</li>
-          <li>You can disable location access at any time in iOS Settings &rarr; Privacy &rarr; Location Services.</li>
+          <li>Location is used only while the App is open. It is never used in the background.</li>
+          <li>Your location is <strong>not stored</strong> and <strong>not sent</strong> to me or to transit data providers.</li>
+          <li>On iPhone you can change this in Settings &rarr; Privacy &amp; Security &rarr; Location Services &rarr; City Transport.</li>
+          <li>On Android you can change this in Settings &rarr; Apps &rarr; City Transport &rarr; Permissions &rarr; Location.</li>
         </ul>
+
+        <h2>Data Stored on Your Device</h2>
+        <p>The App saves the following locally, on your device:</p>
+        <ul>
+          <li>Your settings: city, theme, language, update interval and map preferences.</li>
+          <li>Your favorite routes and stops.</li>
+          <li>Cached route and stop data for your city, so the App opens quickly.</li>
+          <li>On iPhone: commute reminders you create. They are local notifications scheduled on your device; no push server is involved.</li>
+        </ul>
+        <p>
+          This data is not sent to me. Deleting the App removes it. On Android, settings and favorites may be
+          included in your device's Google backup if you have backups turned on.
+        </p>
 
         <h2>Transit Data</h2>
         <p>
-          The App retrieves real-time public transit vehicle positions from third-party transit data providers.
-          This is anonymous, map-level data about vehicle locations — no personal user data is involved in this exchange.
+          The App downloads routes, stops, vehicle positions and arrival times from public transport services
+          and open data feeds of each city. These requests contain the routes and stops you are viewing,
+          but no personal data. As with any internet request, these services can see your IP address.
         </p>
 
-        <h2>Information We Do Not Collect</h2>
+        <h2>Maps</h2>
+        <p>
+          The iOS version displays maps with Apple MapKit, governed by
+          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.
+          The Android version displays maps with the Google Maps SDK, governed by
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+        </p>
+
+        <h2>Analytics &amp; Crash Reports</h2>
+        <p>
+          Both versions use <strong>Google Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>
+          to understand how the App is used and to fix crashes. Firebase collects:
+        </p>
+        <ul>
+          <li>Anonymous usage events, such as which city is selected and which screens are opened.</li>
+          <li>Crash reports with technical details: device model, OS version, app version and the state of the App at the time of the crash.</li>
+          <li>A random app-instance identifier and general device information (model, OS, language, approximate country).</li>
+        </ul>
+        <p>
+          This data is not linked to your name or email. It is processed by Google under the
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy and security terms</a>.
+        </p>
+
+        <h2>Advertising</h2>
+        <p>
+          The App is free and shows ads served by <strong>Google AdMob</strong>. AdMob may use your device's
+          advertising identifier (IDFA on iPhone, Advertising ID on Android), IP address and general device
+          information to show and measure ads.
+        </p>
+        <ul>
+          <li>In the EEA, the UK and Switzerland, the App asks for your consent through Google's consent form before ads are personalized. You can change your choice later in the App's settings.</li>
+          <li>On iPhone, the App asks for permission to track (App Tracking Transparency). If you decline, the advertising identifier is not shared and you see non-personalized ads.</li>
+          <li>On Android, you can reset or delete your Advertising ID in Settings &rarr; Google &rarr; Ads (or Settings &rarr; Privacy &rarr; Ads).</li>
+        </ul>
+        <p>
+          Google's use of advertising data is described in
+          <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>.
+        </p>
+
+        <h2>In-App Purchases</h2>
+        <p>
+          On iPhone, City Transport Pro is an optional subscription that removes ads and unlocks extra features.
+          Purchases are processed by Apple's App Store and managed with <strong>RevenueCat</strong>, which receives an
+          anonymous customer identifier and your purchase history to confirm your subscription. I do not receive or
+          store any payment information. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>
+          and <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.
+        </p>
+        <p>
+          The Android version currently has no in-app purchases.
+        </p>
+
+        <h2>Information I Do Not Collect</h2>
         <p>The App does <strong>not</strong> collect:</p>
         <ul>
-          <li>Personal identifiable information</li>
-          <li>Stored location history</li>
-          <li>Analytics or behavioral tracking data</li>
-          <li>Device identifiers or advertising IDs beyond what Apple's ad frameworks may use</li>
+          <li>Your name, email, phone number or any account details</li>
+          <li>Your location history</li>
+          <li>Contacts, photos or other content on your device</li>
         </ul>
 
-        <h2>In-App Purchases &amp; Advertising</h2>
-        <p>
-          The free version of the App displays ads. Ads are served through Apple's or other advertising
-          frameworks and may use anonymized device identifiers for ad relevance. You can remove ads
-          via the in-app purchase option.
-        </p>
-        <p>
-          In-app purchases are processed by Apple's App Store. I do not receive or store any payment information.
-          Apple's handling of purchase data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.
-        </p>
-
-        <h2>Data Security</h2>
-        <p>
-          The App does not store personal data, so there is minimal personal data at risk.
-          Any cached transit data is temporary and contains no personal information.
-        </p>
+        <h2>Your Choices</h2>
+        <ul>
+          <li>Deny or revoke location access at any time; the App keeps working.</li>
+          <li>Change your ad consent in the App's settings, or limit ad tracking in your device settings.</li>
+          <li>Delete the App to remove all data stored on your device.</li>
+          <li>Email me to ask about or delete any data related to you.</li>
+        </ul>
 
         <h2>Children's Privacy</h2>
         <p>
-          The App does not knowingly collect personal data from children under 13.
-          As the App collects no personal data from any user, it is compliant with COPPA.
+          The App is not directed at children under 13 and does not knowingly collect personal data from them.
         </p>
 
         <h2>Changes to This Policy</h2>
         <p>
-          This Privacy Policy may be updated from time to time. Changes will be posted on this page
-          with a revised date. Continued use of the App constitutes acceptance of the updated policy.
+          This Privacy Policy may be updated from time to time, for example if the App adds new features.
+          Changes will be posted on this page with a revised date.
         </p>
 
         <h2>Contact</h2>
         <p>If you have any questions, please contact me:</p>
         <p><strong>Email:</strong> <a href="mailto:support@kreatimont.com">support@kreatimont.com</a></p>
-
       </div>
     </div>
   </section>

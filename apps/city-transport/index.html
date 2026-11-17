@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>City Transport — Real-Time GPS Transit Tracker</title>
-  <meta name="description" content="Track buses, trams, trolleybuses and minibuses in real time across 70+ cities in 15 European countries. Free on the App Store." />
+  <meta name="description" content="Track buses, trams, trolleybuses and minibuses in real time across 70+ cities in 15 European countries. Free on the App Store and Google Play." />
   <link rel="canonical" href="https://kreatimont.com/apps/city-transport/" />
   <link rel="alternate" hreflang="en" href="https://kreatimont.com/apps/city-transport/" />
   <link rel="alternate" hreflang="ru" href="https://kreatimont.com/ru/apps/city-transport/" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Alexandr Nadtoka" />
   <meta property="og:title" content="City Transport — Real-Time GPS Transit Tracker" />
-  <meta property="og:description" content="Track buses, trams, trolleybuses and minibuses in real time across 70+ cities in 15 European countries. Free on the App Store." />
+  <meta property="og:description" content="Track buses, trams, trolleybuses and minibuses in real time across 70+ cities in 15 European countries. Free on the App Store and Google Play." />
   <meta property="og:url" content="https://kreatimont.com/apps/city-transport/" />
   <meta property="og:image" content="https://kreatimont.com/assets/images/apps/city-transport-og.jpg" />
   <meta property="og:locale" content="en_US" />
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="City Transport — Real-Time GPS Transit Tracker" />
-  <meta name="twitter:description" content="Track buses, trams, trolleybuses and minibuses in real time across 70+ cities in 15 European countries. Free on the App Store." />
+  <meta name="twitter:description" content="Track buses, trams, trolleybuses and minibuses in real time across 70+ cities in 15 European countries. Free on the App Store and Google Play." />
   <meta name="twitter:image" content="https://kreatimont.com/assets/images/apps/city-transport-og.jpg" />
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png" />
@@ -45,10 +45,10 @@
         "url": "https://kreatimont.com/apps/city-transport/",
         "description": "Real-time GPS tracking for public transit across 70+ cities in 15 European countries.",
         "applicationCategory": "TravelApplication",
-        "operatingSystem": "iOS",
+        "operatingSystem": "iOS, Android",
         "image": "/assets/images/apps/city-transport.webp",
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "downloadUrl": "https://apps.apple.com/app/id1445904986",
+        "downloadUrl": ["https://apps.apple.com/app/id1445904986", "https://play.google.com/store/apps/details?id=io.kreatimont.android.citytransport"],
         "author": { "@id": "https://kreatimont.com/#person" }
       },
       {
@@ -104,9 +104,13 @@
         <div class="app-hero-meta">
           <h1>City Transport</h1>
           <p class="app-hero-subtitle">Real-time GPS tracking for buses, trams, trolleybuses and minibuses across 70+ cities in 15 European countries.</p>
+          <p class="text-secondary" style="margin-bottom: 16px;">For iPhone and Android. The Android version covers 44 Ukrainian cities.</p>
           <div class="app-badges">
             <a href="https://apps.apple.com/app/id1445904986" target="_blank" rel="noopener">
               <img src="/assets/images/badges/app-store-en.svg" alt="Download on the App Store" height="48" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=io.kreatimont.android.citytransport" target="_blank" rel="noopener">
+              <img src="/assets/images/badges/google-play-en.svg" alt="Get it on Google Play" height="48" />
             </a>
           </div>
         </div>
@@ -216,6 +220,9 @@
         <span class="tech-pill">UIKit</span>
         <span class="tech-pill">SnapKit</span>
         <span class="tech-pill">MapKit</span>
+        <span class="tech-pill">Kotlin</span>
+        <span class="tech-pill">Jetpack Compose</span>
+        <span class="tech-pill">Google Maps</span>
       </div>
     </div>
   </section>
@@ -224,7 +231,7 @@
     <div class="container">
       <p class="section-label">Privacy</p>
       <h2 class="section-title">Your location, your choice</h2>
-      <p class="section-subtitle" style="margin-bottom: 24px;">Geolocation is entirely optional. The app works fully without it. We don't track you.</p>
+      <p class="section-subtitle" style="margin-bottom: 24px;">Geolocation is optional and never leaves your device. The app works fully without it. Ads and anonymous analytics are explained in the privacy policy.</p>
       <a href="privacy.html" class="btn btn-secondary">Read Full Privacy Policy</a>
     </div>
   </section>
